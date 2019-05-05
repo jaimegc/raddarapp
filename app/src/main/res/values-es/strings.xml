@@ -816,7 +816,7 @@
     <string name="news_raddar_title_mock">Raddar Mock Beta v%s</string>
     <string name="news_raddar_description_mock">
         Esta app fue el producto de una Startup de Sevilla (España) llamada Kreomi que no funcionó en el mercado. Empezamos en 2016 y terminamos en 2018 \n\n
-        ✔ Este proyecto no tiene mantenimiento y no se añadirán nuevas funcionalidades
+        ✔ Este proyecto no tiene mantenimiento y no se añadirán nuevas funcionalidades\n\n
         ✔ No guardamos ningún dato, todos los datos son mocks \n\n
         ✔ Imágenes mock de https://pixabay.com \n\n
         ✔ Comentarios mock\n\n
