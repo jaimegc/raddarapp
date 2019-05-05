@@ -616,7 +616,7 @@ public class FootprintsMainFakeReadableDataSource extends EmptyPaginatedReadable
                 .withAspectRatio(AspectRatioType.FIVE_FOUR.getValue())
                 .withSponsored(SponsoredType.NO_SPONSORED.getValue())
                 .withScope(78)
-                .withCategory(FootprintCategory.CATEGORY_EMOJI_GASTRONOMY.getValue())
+                .withCategory(FootprintCategory.CATEGORY_EMOJI_PEOPLE.getValue())
                 .withCaptures(120)
                 .withLevel(FootprintLevel.CONVENCIONAL.getValue())
                 .withType(FootprintType.FOOTPRINT.getValue())
