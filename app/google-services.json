@@ -1,0 +1,115 @@
+{
+  "project_info": {
+    "project_number": "458019294281",
+    "firebase_url": "https://raddar-app.firebaseio.com",
+    "project_id": "raddar-app",
+    "storage_bucket": "raddar-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:111019294281:android:933b1973b19e6fcd",
+        "android_client_info": {
+          "package_name": "com.raddarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raddarapp",
+            "certificate_hash": "fa333dfac1a169534a7c8a208b86f36f117d5f73"
+          }
+        },
+        {
+          "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raddarapp",
+            "certificate_hash": "e1a24aaac4eba9522466bc8906fecaaa07201ddc"
+          }
+        },
+        {
+          "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYtAAAwEs7zSuDcBBJ64KCrqvfDIvT_3"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458019294281:android:dd5846d29ffcc307",
+        "android_client_info": {
+          "package_name": "com.raddarapp.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.raddarapp.debug",
+            "certificate_hash": "8ca69fad41c475e8654a508d5b1f6ee631abbf7a"
+          }
+        },
+        {
+          "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYtAAAwEs7zSuDcBBJ64KCrqvfDIvT_3"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454449294281-lcoadd8aa0clo42paecssae6bb7oi4rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
