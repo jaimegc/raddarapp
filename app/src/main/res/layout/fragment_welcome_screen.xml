@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    tools:background="@color/black"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/welcome_screen_empty"
+        android:layout_marginBottom="122dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            android:layout_width="@dimen/loading_medium_size"
+            android:layout_height="@dimen/loading_medium_size"
+            android:layout_gravity="center"
+            app:indicatorName="BallScaleMultipleIndicator"
+            android:layout_marginEnd="6dp"
+            app:indicatorColor="@color/white"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:id="@+id/try_again"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_big1"
+            android:text="@string/welcome_try_again"
+            android:gravity="center"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginBottom="55dp"
+        android:layout_alignParentBottom="true"
+        android:maxLines="3"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:text="@string/welcome_screen_first"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_very_big1"
+        android:gravity="center"/>
+
+</RelativeLayout>

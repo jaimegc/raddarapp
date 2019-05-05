@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/background_screen_dark"
+    android:layout_centerInParent="true">
+
+  <ImageView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:scaleType="centerCrop"
+      android:src="@drawable/confetti" />
+
+  <View
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:layout_alignParentBottom="true"
+      android:layout_below="@+id/relative_toolbar"
+      android:background="@color/background_screen_confetti" />
+
+  <LinearLayout
+      android:id="@+id/loading_view_influencers"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:paddingTop="@dimen/toolbar_leaders_height"
+      android:orientation="vertical"
+      android:layout_alignParentTop="true"
+      android:layout_alignParentStart="true">
+
+    <ImageView
+        android:id="@+id/loading_image"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/searching_territory" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <LinearLayout
+          android:id="@+id/linear_searching"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:gravity="center_horizontal|bottom"
+          android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/text_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="@dimen/textsize_huge3"
+            android:fitsSystemWindows="true"
+            android:layout_marginEnd="10dp"
+            android:text="@string/loading_territories"/>
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            android:layout_width="@dimen/loading_medium_size"
+            android:layout_height="@dimen/loading_medium_size"
+            android:layout_gravity="center"
+            app:indicatorName="BallScaleMultipleIndicator"
+            app:indicatorColor="@color/white" />
+      </LinearLayout>
+      <TextView
+          android:id="@+id/text_empty_leaders"
+          android:layout_width="match_parent"
+          android:layout_height="100dp"
+          android:textColor="@color/white"
+          android:gravity="center"
+          android:textSize="@dimen/textsize_huge3"
+          android:fitsSystemWindows="true"
+          android:visibility="gone"
+          tools:visibility="visible"
+          android:text="@string/empty_leaders"/>
+    </LinearLayout>
+  </LinearLayout>
+</RelativeLayout>

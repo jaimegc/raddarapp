@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/size_back_toolbar"
+            android:layout_height="@dimen/size_back_toolbar"
+            android:padding="@dimen/padding_back_toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center_vertical|start"
+            android:tint="@color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/aspect_ratio_image"
+                android:layout_width="@dimen/loading_medium_size"
+                android:layout_height="@dimen/loading_medium_size"
+                android:src="@drawable/ic_aspect_ratio_1_1"
+                android:layout_gravity="center"
+                android:layout_marginEnd="10dp"
+                android:tint="@color/white"/>
+
+            <ImageView
+                android:id="@+id/rotate_image"
+                android:layout_width="@dimen/loading_medium_size"
+                android:layout_height="@dimen/loading_medium_size"
+                android:padding="4dp"
+                android:src="@drawable/ic_rotate_90"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:tint="@color/white"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/save_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/marker_me"
+            tools:text="@string/save_image"
+            android:text="@string/save_image"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsize_very_big2" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:tint="@color/background_screen_grey"
+            android:src="@drawable/background_card"/>
+
+        <com.raddarapp.presentation.android.view.cropper.CropImageView
+            android:id="@+id/cropImageView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+</LinearLayout>
+
+

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.raddarapp.presentation.android.view.StableAspectAnyUserFootprintRelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:aspect_width="260"
+    app:aspect_height="324"
+    android:layout_marginTop="@dimen/default_layout_margin_footprint_card_small"
+    android:layout_marginStart="@dimen/default_layout_margin_footprint_card_very_small1"
+    android:layout_marginEnd="@dimen/default_layout_margin_footprint_card_very_small1"
+    android:background="@drawable/background_card_white"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:id="@+id/card_root">
+
+    <android.support.percent.PercentRelativeLayout
+        android:id="@+id/layer_my_footprints_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:visibility="visible"
+        android:background="@drawable/background_card_blue">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:tint="@color/background_card_hide"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:src="@drawable/background_card"/>
+
+        <android.support.percent.PercentRelativeLayout
+            app:layout_widthPercent="100%"
+            app:layout_heightPercent="100%"
+            android:gravity="center"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="60%"
+                android:src="@drawable/loading_footprints"/>
+
+            <TextView
+                android:id="@+id/text_my_footprints_more"
+                app:layout_widthPercent="100%"
+                app:layout_heightPercent="50%"
+                android:textSize="@dimen/textsize_very_big2"
+                android:text="@string/my_profile_text_more_my_footprints"
+                android:textColor="@color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center" />
+        </android.support.percent.PercentRelativeLayout>
+
+    </android.support.percent.PercentRelativeLayout>
+
+</com.raddarapp.presentation.android.view.StableAspectAnyUserFootprintRelativeLayout>

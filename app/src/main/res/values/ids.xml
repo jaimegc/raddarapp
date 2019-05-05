@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <item name="crop_image_menu_crop" type="drawable"/>
+
+  <!-- Profile -->
+  <item name="cat_avatar" type="id"></item>
+  <item name="username" type="id"></item>
+</resources>

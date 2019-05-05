@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layer_more_ranking"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/size_user_ranking"
+    android:background="@color/background_toolbar">
+
+    <TextView
+        android:id="@+id/text_ranking_more"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/size_user_ranking"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_big1"
+        android:text="@string/text_ranking_more"/>
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="5dip" />
+            <gradient
+                android:endColor="@color/vote_positive"
+                android:centerColor="@color/blue_dark_raddar"
+                android:startColor="@color/vote_negative"
+                android:angle="90"/>
+        </shape>
+    </item>
+
+</layer-list>

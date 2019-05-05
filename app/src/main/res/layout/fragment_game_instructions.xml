@@ -1,0 +1,488 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/relative_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/background_toolbar"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/size_back_toolbar"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|start"
+            android:padding="@dimen/padding_back_toolbar"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/game_instructions_toolbar"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_very_big2" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_toolbar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/confetti" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relative_toolbar"
+        android:background="@color/background_screen_confetti" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_below="@+id/relative_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo_register"
+                android:layout_marginTop="40dp"
+                android:padding="12dp" />
+
+            <TextView
+                android:id="@+id/instructions_initial"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_initial"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:layout_marginBottom="20dp"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen0"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/instructions_screen0"
+                    android:layout_marginBottom="20dp"/>
+
+                <TextView
+                    android:id="@+id/instructions_message0"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    tools:text="@string/game_instructions_message0"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_big1"
+                    android:layout_below="@+id/instructions_screen0"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen1"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading1"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message1"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen2"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading2"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message2"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen3"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading3"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen4"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading4"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message4"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen5"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading5"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message5"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen6"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen1" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading6"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:visibility="gone"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message6"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen7"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading7"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message7"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen8"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading8"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen9"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading9"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message9"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen10"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading10"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message10"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/instructions_screen11"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:src="@drawable/welcome_screen_empty" />
+
+                <com.wang.avi.AVLoadingIndicatorView
+                    android:id="@+id/loading11"
+                    android:layout_width="@dimen/loading_medium_size"
+                    android:layout_height="@dimen/loading_medium_size"
+                    android:layout_gravity="center"
+                    app:indicatorName="BallScaleMultipleIndicator"
+                    android:layout_marginEnd="6dp"
+                    app:indicatorColor="@color/white"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/instructions_message11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message11"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/instructions_message12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                tools:text="@string/game_instructions_message12"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_big1"
+                android:gravity="center_vertical"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

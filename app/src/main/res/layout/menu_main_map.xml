@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:id="@+id/view_center_gps"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="110dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/circle_blue"
+            android:elevation="3dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tint="@color/white"
+            android:padding="6dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_center_gps" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_center_compass"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/circle_blue"
+            android:elevation="3dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tint="@color/white"
+            android:padding="6dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_compass" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/view_satellite_normal_map"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="4dp"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/circle_image_satellite_normal_map"
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:background="@drawable/circle_grey"
+            android:elevation="1dp" />
+
+        <ImageView
+            android:id="@+id/image_satellite_normal_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:tint="@color/white"
+            android:padding="8dp"
+            android:elevation="4dp"
+            android:src="@drawable/ic_satellite_map" />
+    </RelativeLayout>
+</RelativeLayout>

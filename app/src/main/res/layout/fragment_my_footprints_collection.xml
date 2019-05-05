@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background_screen_grey">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/loading_medium_size"
+            android:layout_height="@dimen/loading_medium_size"
+            android:padding="12dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center_vertical|start"
+            android:tint="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_very_big3"
+            android:text="@string/my_footprints_collection_toolbar"/>
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_my_footprints_collection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        android:scrollbars="none"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/loading_bottom"
+        android:paddingStart="@dimen/default_layout_margin_footprint_card_very_small1"
+        android:paddingEnd="@dimen/default_layout_margin_footprint_card_very_small1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingBottom="4dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:orientation="vertical">
+
+        <include layout="@layout/loading_view_my_footprints_collection"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/empty_view_my_footprints_collection"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loading_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/loading_view_normal_blue"
+            android:visibility="visible"/>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,304 @@
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+apply plugin: 'com.google.firebase.firebase-perf'
+
+def keystorePropertiesFile = rootProject.file("keystore.properties")
+def keystoreProperties = new Properties()
+keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+
+android {
+    compileSdkVersion Integer.parseInt(project.ANDROID_BUILD_SDK_VERSION)
+    buildToolsVersion project.ANDROID_BUILD_TOOLS_VERSION
+
+    defaultConfig {
+        applicationId "com.raddarapp"
+        minSdkVersion Integer.parseInt(project.ANDROID_MIN_SDK_VERSION)
+        targetSdkVersion Integer.parseInt(project.ANDROID_BUILD_TARGET_SDK_VERSION)
+        versionCode Integer.parseInt(project.VERSION_CODE)
+        versionName project.VERSION_NAME
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        manifestPlaceholders = [fabric_key: keystoreProperties['fabric_key']]
+    }
+
+    configurations.all {
+        resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
+        exclude group: 'org.json', module: 'json'
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "IS_DEBUG", "true"
+            buildConfigField "String", "BASE_FONT_NAME", '"CircularStd-Bold.ttf"'
+            buildConfigField "String", "DATA_ORIGIN", '"API_REMOTE_DEV"'
+            buildConfigField "String", "SERVER_AMAZON_API_BASE_URL", '"https://s3-us-west-2.amazonaws.com"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL", '"https://d14ppq0ywcvzvm.cloudfront.net"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_PATH", '"images/"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/images/"'
+            buildConfigField "String", "SERVER_IMAGES_INSIGNIAS_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/insignes/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/profileImages/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_ON_BOARDING_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/files/onboarding/"'
+            buildConfigField "String", "SERVER_AUDIO_API_BASE_PATH", '"raddarapp-s3/profileAudios/"'
+            buildConfigField "String", "SERVER_IMAGES_SMALL_SUFFIX", '"_small"'
+            buildConfigField "String", "SERVER_IMAGES_MEDIUM_SUFFIX", '"_medium"'
+            buildConfigField "String", "SERVER_API_VERSION", keystoreProperties['api_server_version_debug']
+            buildConfigField "String", "SERVER_API", keystoreProperties['api_server_debug']
+            buildConfigField "String", "SERVER_API_PORT", keystoreProperties['api_server_port_debug']
+            buildConfigField "String", "GOOGLE_OAUTH_CLIENT_ID", keystoreProperties['google_oauth_client_id']
+            buildConfigField "String", "RADDAR_API_AUTHORIZATION", keystoreProperties['raddar_api_authorization_debug']
+
+            manifestPlaceholders = [google_map_key: keystoreProperties['google_map_key_debug']]
+            resValue "string", "facebook_app_id", keystoreProperties['facebook_app_id']
+
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+
+        debugLocal {
+            buildConfigField "boolean", "IS_DEBUG", "true"
+            buildConfigField "String", "BASE_FONT_NAME", '"CircularStd-Bold.ttf"'
+            buildConfigField "String", "DATA_ORIGIN", '"API_LOCAL"'
+            buildConfigField "String", "SERVER_AMAZON_API_BASE_URL", '"https://s3-us-west-2.amazonaws.com"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL", '"https://d14ppq0ywcvzvm.cloudfront.net"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_PATH", '"images/"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/images/"'
+            buildConfigField "String", "SERVER_IMAGES_INSIGNIAS_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/insignes/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/profileImages/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_ON_BOARDING_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/files/onboarding/"'
+            buildConfigField "String", "SERVER_AUDIO_API_BASE_PATH", '"raddarapp-s3/profileAudios/"'
+            buildConfigField "String", "SERVER_IMAGES_SMALL_SUFFIX", '"_small"'
+            buildConfigField "String", "SERVER_IMAGES_MEDIUM_SUFFIX", '"_medium"'
+            buildConfigField "String", "SERVER_API_VERSION", keystoreProperties['api_server_version_debug']
+            buildConfigField "String", "SERVER_API", keystoreProperties['api_server_debug']
+            buildConfigField "String", "SERVER_API_PORT", keystoreProperties['api_server_port_debug']
+            buildConfigField "String", "GOOGLE_OAUTH_CLIENT_ID", keystoreProperties['google_oauth_client_id']
+            buildConfigField "String", "RADDAR_API_AUTHORIZATION", keystoreProperties['raddar_api_authorization_debug']
+
+            manifestPlaceholders = [google_map_key: keystoreProperties['google_map_key_debug']]
+            resValue "string", "facebook_app_id", keystoreProperties['facebook_app_id']
+
+            signingConfig signingConfigs.debug
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+
+        debugFake {
+            buildConfigField "boolean", "IS_DEBUG", "true"
+            buildConfigField "String", "BASE_FONT_NAME", '"CircularStd-Bold.ttf"'
+            buildConfigField "String", "DATA_ORIGIN", '"API_FAKE"'
+            buildConfigField "String", "SERVER_AMAZON_API_BASE_URL", '"https://s3-us-west-2.amazonaws.com"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL", '"https://d14ppq0ywcvzvm.cloudfront.net"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_PATH", '"images/"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL_COMPLETE", '""'
+            buildConfigField "String", "SERVER_IMAGES_INSIGNIAS_API_BASE_URL_COMPLETE", '""'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_API_BASE_URL_COMPLETE", '""'
+            buildConfigField "String", "SERVER_AUDIO_API_BASE_PATH", '"raddarapp-s3/profileAudios/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_ON_BOARDING_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/files/onboarding/"'
+            buildConfigField "String", "SERVER_IMAGES_SMALL_SUFFIX", '""'
+            buildConfigField "String", "SERVER_IMAGES_MEDIUM_SUFFIX", '""'
+            buildConfigField "String", "SERVER_API_VERSION", keystoreProperties['api_server_version_debug']
+            buildConfigField "String", "SERVER_API", keystoreProperties['api_server_debug']
+            buildConfigField "String", "SERVER_API_PORT", keystoreProperties['api_server_port_debug']
+            buildConfigField "String", "GOOGLE_OAUTH_CLIENT_ID", keystoreProperties['google_oauth_client_id']
+            buildConfigField "String", "RADDAR_API_AUTHORIZATION", keystoreProperties['raddar_api_authorization_debug']
+
+            manifestPlaceholders = [google_map_key: keystoreProperties['google_map_key_debug']]
+            resValue "string", "facebook_app_id", keystoreProperties['facebook_app_id']
+
+            signingConfig signingConfigs.debug
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+
+        // Preproduction
+        debugQA {
+            buildConfigField "boolean", "IS_DEBUG", "true"
+            buildConfigField "String", "BASE_FONT_NAME", '"CircularStd-Bold.ttf"'
+            buildConfigField "String", "DATA_ORIGIN", '"API_REMOTE_QA"'
+            buildConfigField "String", "SERVER_AMAZON_API_BASE_URL", '"https://s3-us-west-2.amazonaws.com"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL", '"https://d14ppq0ywcvzvm.cloudfront.net"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_PATH", '"images/"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/QA/images/"'
+            buildConfigField "String", "SERVER_IMAGES_INSIGNIAS_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/QA/insignes/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/QA/profileImages/"'
+            buildConfigField "String", "SERVER_AUDIO_API_BASE_PATH", '"raddarapp-s3/QA/profileAudios/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_ON_BOARDING_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/files/onboarding/"'
+            buildConfigField "String", "SERVER_IMAGES_SMALL_SUFFIX", '"_small"'
+            buildConfigField "String", "SERVER_IMAGES_MEDIUM_SUFFIX", '"_medium"'
+            buildConfigField "String", "SERVER_API_VERSION", keystoreProperties['api_server_version_qa']
+            buildConfigField "String", "SERVER_API", keystoreProperties['api_server_qa']
+            buildConfigField "String", "SERVER_API_PORT", keystoreProperties['api_server_port_qa']
+            buildConfigField "String", "GOOGLE_OAUTH_CLIENT_ID", keystoreProperties['google_oauth_client_id']
+            buildConfigField "String", "RADDAR_API_AUTHORIZATION", keystoreProperties['raddar_api_authorization_debug']
+
+            manifestPlaceholders = [google_map_key: keystoreProperties['google_map_key_debug']]
+            resValue "string", "facebook_app_id", keystoreProperties['facebook_app_id']
+
+            signingConfig signingConfigs.debug
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+
+        // Production debug
+        debugRelease {
+            buildConfigField "boolean", "IS_DEBUG", "true"
+            buildConfigField "String", "BASE_FONT_NAME", '"CircularStd-Bold.ttf"'
+            buildConfigField "String", "DATA_ORIGIN", '"API_REMOTE_PRO"'
+            buildConfigField "String", "SERVER_AMAZON_API_BASE_URL", '"https://s3-us-west-2.amazonaws.com"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL", '"https://d14ppq0ywcvzvm.cloudfront.net"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_PATH", '"images/"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/PRO/images/"'
+            buildConfigField "String", "SERVER_IMAGES_INSIGNIAS_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/PRO/insignes/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/PRO/profileImages/"'
+            buildConfigField "String", "SERVER_AUDIO_API_BASE_PATH", '"raddarapp-s3/PRO/profileAudios/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_ON_BOARDING_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/files/onboarding/"'
+            buildConfigField "String", "SERVER_IMAGES_SMALL_SUFFIX", '"_small"'
+            buildConfigField "String", "SERVER_IMAGES_MEDIUM_SUFFIX", '"_medium"'
+            buildConfigField "String", "SERVER_API_VERSION", keystoreProperties['api_server_version']
+            buildConfigField "String", "SERVER_API", keystoreProperties['api_server']
+            buildConfigField "String", "SERVER_API_PORT", keystoreProperties['api_server_port']
+            buildConfigField "String", "GOOGLE_OAUTH_CLIENT_ID", keystoreProperties['google_oauth_client_id']
+            buildConfigField "String", "RADDAR_API_AUTHORIZATION", keystoreProperties['raddar_api_authorization']
+
+            manifestPlaceholders = [google_map_key: keystoreProperties['google_map_key_debug']]
+            resValue "string", "facebook_app_id", keystoreProperties['facebook_app_id']
+
+            signingConfig signingConfigs.debug
+            applicationIdSuffix ".debug"
+            debuggable true
+        }
+
+        release {
+            buildConfigField "boolean", "IS_DEBUG", "false"
+            buildConfigField "String", "BASE_FONT_NAME", '"CircularStd-Bold.ttf"'
+            buildConfigField "String", "DATA_ORIGIN", '"API_REMOTE_PRO"'
+            buildConfigField "String", "SERVER_AMAZON_API_BASE_URL", '"https://s3-us-west-2.amazonaws.com"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL", '"https://d14ppq0ywcvzvm.cloudfront.net"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_PATH", '"images/"'
+            buildConfigField "String", "SERVER_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/PRO/images/"'
+            buildConfigField "String", "SERVER_IMAGES_INSIGNIAS_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/PRO/insignes/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/PRO/profileImages/"'
+            buildConfigField "String", "SERVER_AUDIO_API_BASE_PATH", '"raddarapp-s3/PRO/profileAudios/"'
+            buildConfigField "String", "SERVER_PROFILE_IMAGES_ON_BOARDING_API_BASE_URL_COMPLETE", '"https://d14ppq0ywcvzvm.cloudfront.net/files/onboarding/"'
+            buildConfigField "String", "SERVER_IMAGES_SMALL_SUFFIX", '"_small"'
+            buildConfigField "String", "SERVER_IMAGES_MEDIUM_SUFFIX", '"_medium"'
+            buildConfigField "String", "SERVER_API_VERSION", keystoreProperties['api_server_version']
+            buildConfigField "String", "SERVER_API", keystoreProperties['api_server']
+            buildConfigField "String", "SERVER_API_PORT", keystoreProperties['api_server_port']
+            buildConfigField "String", "GOOGLE_OAUTH_CLIENT_ID", keystoreProperties['google_oauth_client_id']
+            buildConfigField "String", "RADDAR_API_AUTHORIZATION", keystoreProperties['raddar_api_authorization']
+
+            manifestPlaceholders = [google_map_key: keystoreProperties['google_map_key']]
+            resValue "string", "facebook_app_id", keystoreProperties['facebook_app_id']
+
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+    productFlavors {}
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    // Google & Android
+    compile mobileDependencies.AppCompat
+    compile mobileDependencies.Support
+    compile mobileDependencies.CardView
+    compile mobileDependencies.Design
+    compile mobileDependencies.Guava
+    compile mobileDependencies.MapsUtils
+    compile mobileDependencies.MapsPlayServices
+    compile mobileDependencies.MapsPlayServicesLocation
+    // Karumi
+    compile mobileDependencies.Rosie
+    compile mobileDependencies.Renderers
+    // Retrofit
+    compile mobileDependencies.Retrofit
+    compile mobileDependencies.RetrofitConverterGson
+    // Picasso
+    compile mobileDependencies.Picasso
+    // OkHttp
+    compile mobileDependencies.OkHttp
+    compile mobileDependencies.OkHttpUrlConnection
+    compile mobileDependencies.OkHttpLoggingInterceptor
+    // ButterKnife
+    compile mobileDependencies.ButterKnife
+    annotationProcessor mobileDependencies.ButterKnifeCompiler
+    // Dagger
+    provided mobileDependencies.DaggerCompiler
+    annotationProcessor mobileDependencies.DaggerCompiler
+    // CircleImageView
+    compile mobileDependencies.RoundedImageView
+    // TransitionImageView
+    compile mobileDependencies.TransitionImageView
+    // Apache
+    compile mobileDependencies.ApacheCommonsIO
+    // Multidex
+    compile mobileDependencies.Multidex
+    // Testing
+    testCompile mobileDependencies.JUnit
+    androidTestCompile mobileDependencies.EspressoCore
+    androidTestCompile mobileDependencies.Annotations
+    compile mobileDependencies.MockWebServer
+    compile 'com.squareup.okio:okio:1.13.0'
+    compile 'uk.co.chrisjenx:calligraphy:2.3.0'
+    compile 'com.android.support:percent:26.0.2'
+    compile 'com.vanniktech:emoji-google:0.5.1'
+    compile 'io.github.yavski:fab-speed-dial:1.0.6'
+    compile 'com.ufreedom.uikit:FloatingViewLib:1.0.2'
+    compile 'com.pkmmte.view:circularimageview:1.1'
+    compile 'com.wang.avi:library:2.1.3'
+    compile 'com.makeramen:roundedimageview:2.3.0'
+    compile 'jp.wasabeef:picasso-transformations:2.1.2'
+    compile 'jp.co.cyberagent.android.gpuimage:gpuimage-library:1.4.1'
+    compile 'com.facebook.android:facebook-android-sdk:4.26.0'
+    compile 'cat.ereza:customactivityoncrash:2.1.0'
+    compile 'top.oply.opuslib:opuslib:1.0.2'
+    compile 'com.github.piasy:AudioProcessor:1.5.1'
+    compile 'com.github.piasy:rxandroidaudio:1.5.1'
+    compile 'pl.bclogic:pulsator4droid:1.0.3'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile 'com.google.firebase:firebase-messaging:11.8.0'
+    compile 'com.google.firebase:firebase-core:11.8.0'
+    compile 'com.google.firebase:firebase-perf:11.8.0'
+    compile 'com.google.android.gms:play-services-auth:11.8.0'
+    compile 'com.vdurmont:emoji-java:4.0.0'
+    compile 'com.github.chrisbanes:PhotoView:2.1.3'
+    compile 'com.mrq:final-countdown:1.0.0'
+    compile 'com.getkeepsafe.taptargetview:taptargetview:1.11.0'
+    compile 'com.romandanylyk:pageindicatorview:1.0.0@aar'
+    compile 'com.github.GwonHyeok:StickySwitch:0.0.15'
+    compile 'com.shobhitpuri.custombuttons:google-signin:1.0.0'
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+}
+
+// Tasks
+/*task copyTestResources(type: Copy) {
+    from "${projectDir}/src/test/resources"
+    into "${buildDir}/classes/test"
+}*/
+
+apply plugin: 'com.google.gms.google-services'

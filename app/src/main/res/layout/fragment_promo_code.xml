@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/confetti" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/size_back_toolbar"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center_vertical|start"
+        android:padding="@dimen/padding_back_toolbar"
+        android:src="@drawable/ic_back"
+        android:tint="@color/white"
+        android:elevation="1dp"/>
+
+    <RelativeLayout
+        android:id="@id/relative_loading"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentEnd="true"
+        android:elevation="1dp">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/loading"
+            android:layout_width="@dimen/loading_medium_size"
+            android:layout_height="@dimen/loading_medium_size"
+            android:layout_centerInParent="true"
+            app:indicatorName="BallScaleMultipleIndicator"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="6dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:elevation="1dp"
+            app:indicatorColor="@color/white" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_screen_confetti" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_loading"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/promo_code_lock"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/text_promo_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/textsize_medium3"
+                android:textColor="@color/white"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/promo_code_friends"/>
+
+            <EditText
+                android:id="@+id/edit_promo_code"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_promo_code"
+                android:padding="8dp"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:hint="@string/promo_code_hint_enter_here"
+                android:imeOptions="actionDone"
+                android:inputType="textCapCharacters|textNoSuggestions"
+                android:layout_centerHorizontal="true"
+                android:maxLines="1"
+                android:maxLength="8"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/textsize_big2"
+                android:background="@drawable/background_editext_rounded_white"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_go"
+        android:layout_width="@dimen/toolbar_height"
+        android:layout_height="@dimen/toolbar_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical">
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundTint="@color/black"
+                android:scaleType="center"
+                app:backgroundTint="@color/marker_me"
+                app:elevation="4dp"
+                android:layout_marginEnd="6dp"
+                app:fabSize="mini" />
+        </android.support.design.widget.CoordinatorLayout>
+
+        <ImageView
+            android:id="@+id/ok_image_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_tick"
+            android:tint="@color/enabled_green"
+            android:elevation="5dp"
+            android:layout_marginEnd="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

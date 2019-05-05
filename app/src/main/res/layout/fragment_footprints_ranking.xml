@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/background_toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/loading_medium_size"
+            android:layout_height="@dimen/loading_medium_size"
+            android:padding="12dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="center_vertical|start"
+            android:tint="@color/white"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_very_big3"
+            android:text="@string/footprints_ranking_toolbar"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_territory"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:elevation="1dp"
+        android:paddingStart="@dimen/default_layout_margin_footprint_card"
+        android:paddingEnd="@dimen/default_layout_margin_footprint_card"
+        android:background="@color/background_toolbar"
+        android:layout_below="@+id/toolbar">
+
+        <TextView
+            android:id="@+id/country_emoji"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:textColor="@color/white"
+            android:gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:textSize="@dimen/textsize_big2"
+            tools:text="ES"/>
+
+        <TextView
+            android:id="@+id/territory"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:textColor="@color/white"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="@dimen/textsize_big2"
+            android:gravity="bottom"
+            android:layout_marginBottom="2dp"
+            android:layout_marginStart="4dp"
+            android:layout_toEndOf="@+id/country_emoji"
+            android:text="@string/footprints_ranking_world"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/confetti" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/background_screen_confetti" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_footprints_ranking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:scrollbars="none"
+        android:layout_below="@+id/relative_territory"
+        android:layout_above="@+id/loading_bottom"
+        android:paddingStart="@dimen/default_layout_margin_footprint_card_very_small1"
+        android:paddingEnd="@dimen/default_layout_margin_footprint_card_very_small1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:paddingTop="8dp"
+        android:paddingBottom="4dp" />
+
+    <LinearLayout
+        android:id="@+id/linear_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/loading_view_footprints_ranking"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:visibility="gone"
+        android:orientation="vertical">
+
+        <include layout="@layout/empty_view_footprints_ranking"
+            android:visibility="visible"/>
+    </LinearLayout>
+
+    <!-- Not used nowadays -->
+    <LinearLayout
+        android:id="@+id/loading_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <include layout="@layout/loading_view_normal_blue"
+            android:visibility="visible"/>
+    </LinearLayout>
+</RelativeLayout>

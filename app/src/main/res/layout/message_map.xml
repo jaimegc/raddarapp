@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/message_map"
+    android:layout_width="match_parent"
+    android:layout_height="346dp"
+    android:layout_gravity="bottom"
+    android:gravity="center"
+    tools:visibility="visible"
+    android:clickable="false"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/searching_profile"
+        android:layout_width="200dp"
+        android:layout_height="200dp">
+
+        <pl.bclogic.pulsator4droid.library.PulsatorLayout
+            android:id="@+id/animation_radar_profile"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:pulse_count="8"
+            app:pulse_duration="6000"
+            app:pulse_repeat="0"
+            app:pulse_color="@color/marker_me"
+            app:pulse_startFromScratch="false"
+            app:pulse_interpolator="Linear">
+        </pl.bclogic.pulsator4droid.library.PulsatorLayout>
+
+        <com.pkmmte.view.CircularImageView
+            android:id="@+id/searching_user_image"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/placeholder_profile_big" />
+
+        <ImageView
+            android:id="@+id/user_border"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/searching_profile_border" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/message_map_top"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/welcome_top"
+        android:textColor="@color/marker_me"
+        android:textSize="@dimen/textsize_very_big3"
+        android:layout_marginTop="-10dp"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:shadowColor="@color/black"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/message_map_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome_bottom"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_big1"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="2"
+        android:shadowColor="@color/black"
+        android:gravity="center"/>
+</LinearLayout>

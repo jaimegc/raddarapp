@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:layout_gravity="bottom"
+    android:layout_alignParentBottom="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="45dp">
+
+        <com.raddarapp.presentation.android.view.BottomNavigationViewEx
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:itemIconTint="@color/primarydark_map"
+            app:itemTextColor="@color/primarydark_map"
+            android:background="@android:color/transparent"
+            app:menu="@menu/menu_bottom" />
+
+        <View
+            android:id="@+id/create_footprint"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="-15dp"
+            android:layout_marginBottom="-15dp"
+            android:background="@drawable/background_create_footprint_menu_bottom"
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
+            android:id="@+id/footprint_image"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="-1dp"
+            android:layout_marginBottom="-2dp"
+            android:padding="7dp"
+            android:src="@drawable/ic_footprint_home"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/force_refresh_my_footprints"
+        android:layout_width="75dp"
+        android:layout_height="55dp"
+        app:layout_widthPercent="20%"
+        app:layout_heightPercent="100%"
+        android:clickable="false"
+        android:focusable="false"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true"/>
+
+</android.support.percent.PercentRelativeLayout>

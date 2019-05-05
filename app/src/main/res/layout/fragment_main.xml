@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <fragment
+            android:id="@+id/map_fragment"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
+    <com.raddarapp.presentation.android.view.map.PulseOverlayLayout
+        android:id="@+id/map_overlay_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/map_placeholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.raddarapp.presentation.android.view.map.PulseOverlayLayout>
+
+    <include layout="@layout/menu_main_map" />
+
+    <ImageView
+        android:id="@+id/top_rankings"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="97dp"
+        android:paddingEnd="4dp"
+        android:paddingStart="8dp"
+        android:src="@drawable/ic_top_flags"/>
+
+    <ImageView
+        android:id="@+id/my_territory_position"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="51dp"
+        android:paddingBottom="6dp"
+        android:src="@drawable/ic_show_territory"/>
+
+    <ImageView
+        android:id="@+id/github"
+        android:layout_width="46dp"
+        android:layout_height="56dp"
+        android:layout_gravity="end"
+        android:paddingBottom="6dp"
+        android:layout_marginEnd="2dp"
+        android:padding="6dp"
+        android:src="@drawable/ic_logo_github"/>
+
+    <RelativeLayout
+        android:id="@+id/view_scan_complete"
+        android:layout_width="56dp"
+        android:layout_height="wrap_content"
+        android:paddingEnd="10dp"
+        android:layout_marginEnd="-4dp">
+
+        <RelativeLayout
+            android:layout_width="39dp"
+            android:layout_height="39dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true">
+
+            <View
+                android:id="@+id/radar_scan_stroke"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/circle_white"/>
+
+            <com.raddarapp.presentation.android.view.radarscan.RadarScanView
+                android:id="@+id/radar_scan"
+                android:layout_width="39dp"
+                android:layout_height="39dp"
+                android:layout_marginStart="1dp"/>
+
+            <LinearLayout
+                android:layout_width="28dp"
+                android:layout_height="32dp"
+                android:orientation="vertical"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="6dp">
+
+                <com.raddarapp.presentation.android.view.radarscan.RandomPointsView
+                    android:id="@+id/random_points"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/raddar_button"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginEnd="-9dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/raddar_button"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/main_settings"
+        android:layout_width="44dp"
+        android:layout_height="56dp"
+        android:paddingBottom="6dp"
+        android:padding="10dp"
+        android:layout_gravity="end"
+        android:visibility="gone"
+        android:src="@drawable/ic_settings_main"/>
+
+    <RelativeLayout
+        android:id="@+id/empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_footprints"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:layout_marginTop="52dp"
+        android:layout_gravity="bottom"
+        android:splitMotionEvents="false"
+        tools:visibility="visible"
+        android:visibility="gone" />
+
+    <include layout="@layout/message_map" />
+
+    <include layout="@layout/loading_view_territory_area_main" />
+
+    <View
+        android:id="@+id/view_clickable"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="58dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        android:clickable="true"
+        android:background="@color/transparent" />
+
+    <ImageView
+        android:id="@+id/add_vote"
+        android:layout_width="170dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="65dp"
+        android:visibility="invisible" />
+
+    <include layout="@layout/show_territory_info" tools:visibility="gone"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/main_terrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_terrain"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/total_footprints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginStart="6dp"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_medium"
+        android:layout_marginTop="52dp"
+        android:visibility="gone"
+        tools:visibility="visible"
+        tools:text="Hay 100 flags"
+        android:drawableStart="@drawable/ic_footprint_level"
+        android:drawableEnd="@drawable/ic_footprint_level"
+        android:gravity="center"
+        android:background="@drawable/background_total_footprints" />
+</FrameLayout>

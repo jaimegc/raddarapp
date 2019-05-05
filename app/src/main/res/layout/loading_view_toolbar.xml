@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_loading"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/toolbar_height"
+    android:gravity="center_vertical|end"
+    android:visibility="gone"
+    tools:visibility="visible"
+    android:orientation="horizontal">
+
+  <com.wang.avi.AVLoadingIndicatorView
+      android:layout_width="@dimen/loading_medium_size"
+      android:layout_height="@dimen/loading_medium_size"
+      android:layout_gravity="center"
+      app:indicatorName="BallScaleMultipleIndicator"
+      android:layout_marginEnd="6dp"
+      app:indicatorColor="@color/white" />
+</LinearLayout>

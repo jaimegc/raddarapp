@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="262dp"
+        android:layout_height="228dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+        <RelativeLayout
+            android:layout_width="302dp"
+            android:layout_height="200dp"
+            android:background="@drawable/background_card_profile_audio"
+            android:id="@+id/card_root">
+
+            <TextView
+                android:id="@+id/message_profile_audio_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:textSize="@dimen/textsize_huge2"
+                android:textColor="@color/white"
+                android:text="@string/message_profile_audio_top"/>
+
+            <TextView
+                android:id="@+id/message_profile_audio_bottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_profile_audio_top"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/grey4_raddar"
+                android:textSize="@dimen/textsize_medium2"
+                android:text="@string/message_profile_audio_bottom"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/blablaba"/>
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/message_profile_audio_bottom"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_enormous1"
+                android:text="10:00"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/record"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_profile_audio_mic"
+            android:elevation="5dp" />
+
+    </RelativeLayout>
+</RelativeLayout>

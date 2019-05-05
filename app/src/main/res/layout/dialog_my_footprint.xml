@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="302dp"
+        android:layout_height="180dp"
+        android:background="@drawable/background_card_white"
+        android:id="@+id/card_root">
+
+        <TextView
+            android:id="@+id/message_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_medium2"
+            android:textColor="@color/grey2"
+            android:text="@string/dialog_my_footprint_title"
+            android:layout_marginTop="6dp"
+            android:layout_marginStart="6dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="14dp"
+            android:layout_alignParentStart="true" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/message_top"
+            android:layout_marginEnd="6dp"
+            android:layout_marginStart="6dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/decor_grey_light" />
+
+            <LinearLayout
+                android:id="@+id/linear_discard_flag"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingEnd="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:padding="4dp"
+                    android:paddingEnd="8dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_discard_flag" />
+
+                <TextView
+                    android:id="@+id/text_discard_flag"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:text="@string/dialog_my_footprint_discard_footprint"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_big1" />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/decor_grey_light"
+                android:layout_marginBottom="14dp"/>
+
+            <Button
+                android:id="@+id/message_cancel"
+                android:layout_width="120dp"
+                android:layout_height="36dp"
+                android:layout_marginBottom="26dp"
+                android:background="@drawable/background_button_dialog_ok"
+                android:textColor="@color/dialog_ok"
+                android:stateListAnimator="@null"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textSize="@dimen/textsize_big1"
+                android:text="@string/dialog_cancel"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/main_terrain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/main_terrain"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</RelativeLayout>

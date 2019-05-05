@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fitsSystemWindows="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/confetti"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_screen_confetti"/>
+
+    <RelativeLayout
+        android:id="@+id/toolbar_transparent"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:elevation="1dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/size_back_toolbar"
+            android:layout_height="@dimen/size_back_toolbar"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|start"
+            android:padding="@dimen/padding_back_toolbar"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
+
+        <include
+            layout="@layout/loading_view_toolbar" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relative_login_incomplete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_transparent"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/linear_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_medium3"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/enter_complete_profile_birthdate"/>
+
+                <TextView
+                    android:id="@+id/register_birthdate"
+                    android:layout_width="136dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    android:text="@string/enter_complete_profile_hint_birthdate"
+                    android:layout_marginBottom="6dp"
+                    android:textSize="@dimen/textsize_big2"
+                    android:gravity="center"
+                    android:textColor="@color/hint_color"
+                    android:background="@drawable/background_editext_rounded_white"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/textsize_medium3"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/enter_complete_profile_gender"/>
+
+                <io.ghyeok.stickyswitch.widget.StickySwitch
+                    android:id="@+id/register_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    app:ss_animationDuration="400"
+                    app:ss_iconPadding="3dp"
+                    app:ss_iconSize="33dp"
+                    app:ss_leftIcon="@drawable/ic_register_male"
+                    app:ss_leftText="     "
+                    app:ss_rightIcon="@drawable/ic_register_female"
+                    app:ss_rightText="     "
+                    app:ss_sliderBackgroundColor="@color/blue_very_dark_raddar"
+                    app:ss_switchColor="@color/marker_me"
+                    app:ss_textColor="@color/white"
+                    app:ss_animationType="line"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_register_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_medium3"
+            android:layout_below="@+id/linear_top"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/enter_complete_profile_confirm_username"/>
+
+        <EditText
+            android:id="@+id/register_username"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_register_username"
+            android:padding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:hint="@string/register_username"
+            android:imeOptions="actionDone"
+            android:inputType="text|textNoSuggestions"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:layout_marginBottom="10dp"
+            android:textSize="@dimen/textsize_big2"
+            android:background="@drawable/background_editext_rounded_white"/>
+
+        <TextView
+            android:id="@+id/text_register_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/textsize_medium3"
+            android:layout_below="@+id/register_username"
+            android:textColor="@color/white"
+            android:layout_marginBottom="10dp"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:text="@string/enter_complete_profile_confirm_facebook_email"/>
+
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress|textNoSuggestions"
+            android:layout_below="@+id/text_register_email"
+            android:hint="@string/register_email"
+            android:layout_centerHorizontal="true"
+            android:maxLines="1"
+            android:layout_marginBottom="6dp"
+            android:textSize="@dimen/textsize_big2"
+            android:background="@drawable/background_editext_rounded_white"/>
+
+        <LinearLayout
+            android:id="@+id/linear_promo_code"
+            android:layout_width="240dp"
+            android:layout_height="70dp"
+            android:layout_below="@+id/register_email"
+            android:padding="8dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_promo_code"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="4dp"
+                android:src="@drawable/promo_code_lock"/>
+
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:text="@string/promo_code_text_friends"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_medium"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linear_bottom"
+        android:layout_width="240dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="60dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center">
+        <CheckBox
+            android:id="@+id/checkbox_terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:theme="@style/CheckBoxTermsConditions"
+            android:gravity="center_vertical"
+            android:layout_marginEnd="4dp"
+            android:checked="false"/>
+
+        <TextView
+            android:id="@+id/terms_conditions"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/register_terms_conditions"
+            android:textSize="@dimen/textsize_small1"
+            android:maxLines="3"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_button_purple"
+        android:foreground="?attr/selectableItemBackground"
+        android:stateListAnimator="@null"
+        android:textColor="@color/white"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textsize_very_big3"
+        android:text="@string/enter_complete_profile_finish"/>
+
+</RelativeLayout>

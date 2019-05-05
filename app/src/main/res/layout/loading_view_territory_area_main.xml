@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_loading_territory_area"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_gravity="bottom"
+    android:layout_marginBottom="34dp"
+    android:layout_marginStart="4dp"
+    android:paddingEnd="4dp"
+    android:background="@drawable/background_loading_territory_from_map"
+    tools:visibility="visible"
+    android:visibility="gone">
+
+  <ImageView
+      android:id="@+id/loading_image"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      android:paddingTop="2dp"
+      android:paddingBottom="2dp"
+      android:src="@drawable/ic_show_territory" />
+
+  <TextView
+      android:id="@+id/message_loading_territory_area"
+      android:layout_width="wrap_content"
+      android:layout_height="40dp"
+      android:text="@string/sms_loading_territory"
+      android:textColor="@color/white"
+      android:textSize="@dimen/textsize_big1"
+      android:gravity="center_vertical"/>
+
+  <com.wang.avi.AVLoadingIndicatorView
+      android:id="@+id/loading_territory_area"
+      android:layout_width="40dp"
+      android:layout_height="40dp"
+      app:indicatorName="BallScaleMultipleIndicator"
+      android:layout_marginStart="6dp"
+      app:indicatorColor="@color/white" />
+</LinearLayout>

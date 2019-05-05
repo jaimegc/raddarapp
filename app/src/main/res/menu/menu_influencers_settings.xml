@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_influencers_refresh_ubication"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/btn_influencers_refresh" />
+
+    <!-- <item
+        android:id="@+id/action_influencers_ranking_leaders"
+        android:icon="@drawable/ic_ranking_leaders"
+        android:title="@string/show_ranking_leaders" /> -->
+
+    <item
+        android:id="@+id/action_influencers_help"
+        android:icon="@drawable/ic_help_menu"
+        android:title="@string/show_ranking_help" />
+</menu>

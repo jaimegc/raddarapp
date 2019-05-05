@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/relative_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/background_toolbar"
+        android:elevation="5dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/size_back_toolbar"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_vertical|start"
+            android:padding="@dimen/padding_back_toolbar"
+            android:src="@drawable/ic_back"
+            android:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical"
+            android:text="@string/coin_mining_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_very_big2" />
+
+        <ImageView
+            android:id="@+id/help"
+            android:layout_width="@dimen/size_back_toolbar"
+            android:layout_height="@dimen/size_back_toolbar"
+            android:padding="6dp"
+            android:src="@drawable/ic_help"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:tint="@color/white" />
+
+        <LinearLayout
+            android:id="@+id/linear_loading"
+            android:layout_width="44dp"
+            android:layout_height="56dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="38dp"
+            android:visibility="gone"
+            tools:visibility="visible"
+            android:gravity="center">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="@dimen/loading_mini2_size"
+                android:layout_height="@dimen/loading_mini2_size"
+                app:indicatorName="BallScaleMultipleIndicator"
+                app:indicatorColor="@color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relative_toolbar"
+        android:scaleType="centerCrop"
+        android:src="@drawable/confetti" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/relative_toolbar"
+        android:background="@color/background_screen_confetti" />
+
+    <LinearLayout
+        android:id="@+id/linear_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/relative_toolbar">
+
+        <RelativeLayout
+            android:id="@+id/relative_range"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <include
+                layout="@layout/range_raddar_top" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginEnd="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="@string/coin_mining_exchanged_today"
+                android:textColor="@color/phrase_ranking"
+                android:textSize="@dimen/textsize_small2"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="3dp"
+                    android:padding="2dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_coin"/>
+
+                <com.raddarapp.presentation.android.view.CountAnimationTextView
+                    android:id="@+id/mined_range_today"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="@color/coin"
+                    android:textSize="@dimen/textsize_big1"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:layout_gravity="center"
+                    android:shadowColor="@color/black"
+                    tools:text="+0,0" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/area_mining"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linear_top"
+        android:background="@drawable/background_coin_mining"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginTop="8dp">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="@string/coin_mining_mined"
+                android:textColor="@color/phrase_ranking"
+                android:textSize="@dimen/textsize_medium2"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+                <ImageView
+                    android:id="@+id/ic_coin_mined"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="2dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/ic_coin"/>
+
+                <TextView
+                    android:id="@+id/mined_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_toEndOf="@+id/ic_coin_mined"
+                    android:gravity="center"
+                    android:textColor="@color/coin"
+                    android:textSize="@dimen/textsize_huge2"
+                    android:shadowDx="1"
+                    android:shadowDy="1"
+                    android:shadowRadius="2"
+                    android:shadowColor="@color/black"
+                    tools:text="+4,6" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:orientation="horizontal"
+                android:layout_marginEnd="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/coin_mining_mined_finished"
+                    android:layout_weight="1"
+                    android:textColor="@color/phrase_ranking"
+                    android:textSize="@dimen/textsize_medium2"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center_vertical|end"/>
+
+                <TextView
+                    android:id="@+id/text_time"
+                    android:layout_width="66dp"
+                    android:layout_height="match_parent"
+                    android:text="--:--:--"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_medium2"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/exchange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:visibility="visible"
+                    android:background="@drawable/background_button_green"
+                    android:foreground="?attr/selectableItemBackground"
+                    android:stateListAnimator="@null"
+                    android:textColor="@color/blue_dark_raddar"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="16dp"
+                    android:layout_marginEnd="10dp"
+                    android:textAllCaps="false"
+                    android:textSize="@dimen/textsize_very_big3"
+                    android:text="@string/coin_mining_exchange"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/add_coin_mined"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="100dp"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/add_coin_mined_won"
+        android:layout_width="36dp"
+        android:layout_height="50dp"
+        android:layout_gravity="start|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="6dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

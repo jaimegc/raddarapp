@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">@color/primarydark_map</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="black">#000000</color>
+    <color name="grey1">#858585</color>
+    <color name="grey2">#9A9A9A</color>
+    <color name="grey3">#B3B3B3</color>
+    <color name="semi_transparent_black_light">#59000000</color>
+    <color name="semi_transparent_black_dark">#78000000</color>
+    <color name="semi_transparent_black_dark2">#87000000</color>
+    <color name="semi_transparent_black_very_dark">#96000000</color>
+    <color name="semi_transparent_red_light">#59FF0000</color>
+    <color name="transparent">#00000000</color>
+    <color name="grey1_raddar">#B3B3B3</color>
+    <color name="grey2_raddar">#999999</color>
+    <color name="grey3_raddar">#666666</color>
+    <color name="grey4_raddar">#333333</color>
+    <color name="disabled">#C5C6C6</color>
+    <color name="disabled_dark">#999999</color>
+    <color name="view_save_collection">#FF0000</color>
+    <color name="view_save_collection_layer">#DDFF0000</color>
+    <color name="dialog_background_ok">#EBECEC</color>
+    <color name="dialog_ok">#9D9E9E</color>
+    <color name="audio_stop">@color/marker_me</color>
+    <color name="audio_recording">#FF0000</color>
+    <color name="facebook">#3C5A96</color>
+    <color name="google">#DB4E44</color>
+    <color name="hint_color">#9E9E9E</color>
+    <color name="heart_like">#06FF02</color>
+    <color name="heart_dislike">#DF1B21</color>
+
+    <!-- Card Levels -->
+    <color name="card_level_conventional">#EEE</color>
+    <color name="card_level_popular">#EEE</color>
+    <color name="card_level_claimed">#EEE</color>
+    <color name="card_level_epic">#EEE</color>
+    <color name="card_level_legendary">#EEE</color>
+    <color name="card_level_perpetual">#EEE</color>
+
+    <!-- Card Insignia -->
+    <color name="card_insignia">@color/marker_insignia</color>
+    <color name="card_insignia_stroke">@color/coin_map_stroke</color>
+
+    <!-- Raddar -->
+    <color name="primarydark_map">@color/blue_dark_raddar</color>
+    <color name="background_screen_blue">@color/blue_dark_raddar_map</color>
+    <color name="background_screen_confetti">#DC000066</color>
+    <color name="background_screen_confetti_black">#F0000000</color>
+    <color name="background_map_raddar_no_alpha">@color/blue_dark_raddar</color>
+    <color name="background_map_raddar_no_alpha2">@color/blue_dark_raddar_map_circle</color>
+    <color name="background_splash">#000066</color>
+    <color name="background_dark">#DD000000</color>
+    <color name="background_dark_light">#AA000000</color>
+    <color name="background_screen_alpha">#EE000066</color>
+    <color name="background_screen">#000066</color>
+    <color name="background_screen_dark">#000066</color>
+    <color name="background_screen_grey">#EEE</color>
+    <color name="border_text_flag">#CDCDCD</color>
+    <color name="background_toolbar">#0C046E</color>
+    <color name="background_toolbar_elevation">#00005D</color>
+    <color name="background_card_decoration">#FFFFFF</color>
+    <color name="marker_default">@color/white</color>
+    <color name="marker_unknown">@color/white</color>
+    <color name="marker_friend">#0FFFFF</color>
+    <color name="marker_insignia">#FFDD03</color>
+    <color name="marker_me">#04E601</color>
+    <color name="marker_following">#FF00FE</color>
+    <color name="marker_leader">#FFDD03</color>
+    <color name="decor_blue_light">#32000066</color>
+    <color name="decor_grey_light">#C5C6C6</color>
+    <color name="decor_green_light">#3204E601</color>
+    <color name="decor_purple_light">#493C89</color>
+    <color name="ranking_leader_gold">#FFD700</color>
+    <color name="ranking_leader_silver">#C0C0C0</color>
+    <color name="ranking_leader_bronze">#CD7F32</color>
+    <color name="raddar_button">#094C00</color>
+    <color name="coin">#FFDD03</color>
+    <color name="coin_map">#FFDD03</color>
+    <color name="coin_map_stroke">#A18538</color>
+    <color name="coin_map_text">#A18538</color>
+    <color name="footprint_location">#AAFFDD03</color>
+    <color name="footprint_insignia_location">#AAFFFFFF</color>
+    <color name="footprint_location_invisible">#AAFC0D1B</color>
+    <color name="coin_map_invisible">#FC0D1B</color>
+    <color name="coin_map_invisible_stroke">#B30610</color>
+
+    <color name="switch_settings_on">@color/marker_me</color>
+    <color name="switch_settings_off">@color/grey1</color>
+
+    <color name="circle1">#3304E601</color>
+    <color name="circle2">#6604E601</color>
+    <color name="circle3">#9A04E601</color>
+    <color name="circle4">#04E601</color>
+    <color name="circle5">#04E601</color>
+
+    <color name="button_purple">#E5097F</color>
+
+    <color name="blue_very_dark_raddar">#000044</color>
+    <color name="blue_dark_raddar">#000066</color>
+    <color name="blue_dark_raddar_map">#E6000066</color>
+    <color name="blue_dark_raddar_map_circle">#6F000066</color>
+    <color name="blue_dark_menu_open">#BC000066</color>
+    <color name="blue_dark_tutorial">#000044</color>
+    <color name="level">#BC000066</color>
+
+    <color name="green_raddar">#21610B</color>
+    <color name="green_raddar_map">#DD21610B</color>
+    <color name="green_raddar_map_circle">#6F21610B</color>
+
+    <color name="enabled_green">#0A8A0A</color>
+
+    <color name="reach_color">#FC6700</color>
+
+    <!-- Footprint Card -->
+    <color name="profile_stroke">#F2F2F2</color>
+    <color name="like_old">#00A0E3</color>
+    <color name="like">@color/enabled_green</color>
+    <color name="dislike">#E31E24</color>
+    <color name="like_five_star">@color/marker_me</color>
+    <color name="dislike_one_star">#F11527</color>
+
+    <!-- Territory -->
+    <color name="ranking_map_area_color">#3F04E601</color>
+    <color name="ranking_map_border_color">@color/blue_dark_raddar</color>
+    <color name="ranking_map_status_bar">#000040</color>
+    <color name="territory_map_view_top">#EE000066</color>
+    <color name="ranking_map_view_top_text">#80FFFFFF</color>
+
+    <!-- Ranking -->
+    <color name="phrase_ranking">#80FFFFFF</color>
+    <color name="icons_ranking">#0A8A0A</color>
+    <color name="diagonal_purple">#E5097F</color>
+    <color name="phrase_position">#7F7FB2</color>
+
+    <!-- Collection -->
+    <color name="phrase_collection">#80FFFFFF</color>
+    <color name="icons_collection">#0A8A0A</color>
+
+    <!-- Profile -->
+    <color name="phrase_profile">#7F7FB2</color>
+    <color name="background_card_hide">#04044A</color>
+    <color name="background_card_empty">#D8D8D8</color>
+    <color name="background_card_empty_plus">#D8D8D8</color>
+    <color name="background_card_image_empty">#E6E6E6</color>
+
+    <!-- Login -->
+    <color name="phrase_terms_conditions">#80FFFFFF</color>
+
+    <!-- Vote -->
+    <color name="vote_positive">#02E802</color>
+    <color name="vote_negative">#F1151B</color>
+</resources>

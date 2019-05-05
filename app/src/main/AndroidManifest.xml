@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raddarapp">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-feature android:name="android.hardware.location.network" />
+    <uses-feature android:name="android.hardware.location.gps" />
+    <uses-feature android:name="android.hardware.camera" />
+
+    <!-- https://developer.android.com/guide/practices/screens_support.html#screen-independence -->
+    <!-- https://developer.android.com/guide/topics/manifest/supports-screens-element.html -->
+    <!-- https://developer.android.com/about/dashboards/index.html -->
+    <supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true" />
+
+    <!-- Some devices large & xxhdpi are not compatibles with this configuration... why? -->
+
+    <!-- <compatible-screens>
+        <screen android:screenSize="normal" android:screenDensity="hdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xhdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xxhdpi" />
+        <screen android:screenSize="normal" android:screenDensity="xxxhdpi" />
+
+        <screen android:screenSize="large" android:screenDensity="hdpi" />
+        <screen android:screenSize="large" android:screenDensity="xhdpi" />
+        <screen android:screenSize="large" android:screenDensity="xxhdpi" />
+        <screen android:screenSize="large" android:screenDensity="xxxhdpi" />
+
+        <screen android:screenSize="xlarge" android:screenDensity="hdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="xhdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="xxhdpi" />
+        <screen android:screenSize="xlarge" android:screenDensity="xxxhdpi" />
+    </compatible-screens> -->
+
+
+    <application
+        android:name=".presentation.android.RaddarApplication"
+        android:allowBackup="true"
+        android:largeHeap="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <uses-library android:name="com.google.android.maps" />
+
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/facebook_app_id"/>
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="${google_map_key}"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="${fabric_key}" />
+
+        <activity
+            android:name=".presentation.android.activity.SplashActivity"
+            android:theme="@style/ActivityBackground"
+            android:screenOrientation="portrait"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".presentation.android.activity.WelcomeScreenActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.WelcomeInAppScreenActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.LoginActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.CrashActivity"
+            android:theme="@style/ActivityBackgroundBlue"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.EnterLoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".presentation.android.activity.EnterLoginSocialActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".presentation.android.activity.EnterCompleteProfileActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".presentation.android.activity.FootprintMainActivity"
+            android:theme="@style/ActivityBackground"
+            android:screenOrientation="portrait"
+            android:launchMode= "singleTask"/>
+
+        <activity android:name=".presentation.android.activity.FootprintMainDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.MyFootprintDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.CreateFootprintActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".presentation.android.view.cropper.CropImageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".presentation.android.activity.CommentsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.UserProfileActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.MyProfileSettingsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.EditMyProfileChangeFieldActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.MyFootprintsAllActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.MyFootprintsCollectionActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.FootprintsRankingActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.FootprintRankingDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.MyFootprintCollectionDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.MyUsersRankingAllActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.UserFootprintDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.UserFootprintsAllActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.ImageDetailsActivity"/>
+
+        <activity android:name=".presentation.android.activity.GameInstructionsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.CoinMiningActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".presentation.android.activity.PromoCodeActivity"
+            android:screenOrientation="portrait"/>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.imagePicker.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <!-- Firebase -->
+        <service
+            android:name=".data.android.external.service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".data.android.external.service.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
+        See README(https://goo.gl/l4GJaQ) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_logo_notification" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/blue_dark_raddar" />
+
+    </application>
+
+</manifest>

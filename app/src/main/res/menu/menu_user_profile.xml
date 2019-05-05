@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_user_profile_follow"
+        android:icon="@drawable/ic_fans"
+        android:title="@string/btn_user_profile_follow" />
+
+    <item
+        android:id="@+id/action_user_profile_social_network"
+        android:icon="@drawable/ic_social_networks"
+        android:title="@string/btn_user_profile_social_network" />
+
+    <!--<item
+        android:id="@+id/action_user_profile_report"
+        android:icon="@drawable/ic_help_menu"
+        android:title="@string/btn_user_profile_report" /> -->
+</menu>

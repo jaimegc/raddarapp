@@ -1,0 +1,812 @@
+<resources>
+    <string name="app_name">Raddar</string>
+
+    <!-- Raddar Top Menu -->
+    <string name="raddar_top_name">Raddar:</string>
+    <string name="raddar_version">Raddar Mock Beta v%s</string>
+    <string name="raddar_distance_meters">m.</string>
+    <string name="you_are_amazing">YOU ARE GOOD</string>
+
+    <!-- Tab name -->
+    <string name="tab_footprints">Footprints</string>
+
+    <!-- Transitions -->
+    <string name="ts_map_placeholder">ts_map_placeholder</string>
+    <string name="ts_image_details">ts_image_details</string>
+
+    <!-- Buttons -->
+    <string name="btn_following">Be fan</string>
+    <string name="btn_unfollowing">I\'m a fan</string>
+    <string name="btn_take_photo">Take a picture</string>
+
+    <!-- Menu Buttons -->
+    <string name="btn_main_center_gps">Center your position</string>
+    <string name="btn_main_center_compass">Center your compas</string>
+    <string name="btn_main_clean_map">Clean map</string>
+    <string name="btn_main_unclean_map">Unclean map</string>
+    <string name="btn_main_show_territory">Where Am I?</string>
+    <string name="btn_main_invite_friends">Invite Friends</string>
+    <string name="btn_main_friends_fans">Friends &amp; Fans</string>
+    <string name="btn_main_footprints_flavs">My collection</string>
+    <string name="btn_main_settings">Settings</string>
+    <string name="btn_main_profile_edit">Edit profile</string>
+    <string name="btn_main_tutorial">Instructions</string>
+    <string name="btn_main_logout">Log out</string>
+    <string name="btn_influencers_show_territory_parent">Upper territory</string>
+    <string name="btn_influencers_show_territory_son">Lower territory</string>
+    <string name="btn_influencers_show_territory_map">Show territory</string>
+    <string name="btn_influencers_refresh">Update position</string>
+    <string name="btn_user_profile_follow">Be a fan</string>
+    <string name="btn_user_profile_social_network">Social networks</string>
+    <string name="btn_user_profile_report">Report profile</string>
+    <string name="send_email_chooser">Send us an email</string>
+    <string name="send_email_territories_email">territories@raddarapp.com</string>
+    <string name="send_email_territories_subject">Ask for a new territory</string>
+    <string name="send_email_comments_email">info@raddarapp.com</string>
+    <string name="send_email_remove_account_subject">I want to remove my account</string>
+    <string name="send_email_remove_account_email">byebye@raddarapp.com</string>
+    <string name="send_email_comments_subject">My comments</string>
+
+    <!-- Bottom Menu Buttons -->
+    <string name="navigation_my_raddar">Vote</string>
+    <string name="navigation_leaders">Leaders</string>
+    <string name="navigation_my_friends">Friends</string>
+    <string name="navigation_my_profile">Me</string>
+
+    <!-- Welcome Screen -->
+    <string name="welcome_screen_no_show_more">Dont show anymore</string>
+    <string name="welcome_screen_go">Continue</string>
+    <string name="welcome_screen_end">Finish</string>
+    <string name="welcome_screen_first"><![CDATA[<font color="#FFFFFF">"Vote with no mercy<br>what others post"</font><font color="#04E601">" around you"</font><font color="#00c4ff">"<br/>(your vote is anonymous)"</font>]]></string>
+    <string name="welcome_screen_second"><![CDATA[<font color="#FFFFFF">"Vote "</font><font color="#04E601">"swipping up </font><font color="#FFFFFF">"if you<br/>like what you see"</font><font color="#00c4ff">"<br/>(add +1 point)"</font>]]></string>
+    <string name="welcome_screen_third"><![CDATA[<font color="#FFFFFF">"Vote "</font><font color="#04E601">"swipping down </font><font color="#FFFFFF">"if you<br/>don\'t like it"</font><font color="#00c4ff">"<br/>(subtract -1 pooint)"</font>]]></string>
+    <string name="welcome_screen_fourth"><![CDATA[<font color="#FFFFFF">"Worst posts"</font><font color="#FFFFFF">"<br/>just die"<font color="#04E601">" yes DIE"</font><font color="#00c4ff">"<br/>(forever)"</font>]]></string>
+    <string name="welcome_screen_fifth"><![CDATA[<font color="#FFFFFF">"the"</font> <font color="#04E601">"very best posts"</font><font color="#FFFFFF">"<br/>will become " <font color="#ffed00">"leaders"</font><font color="#00c4ff">"<br/>(where you publish)"</font>]]></string>
+    <string name="welcome_try_again">Tap here to update\n the picture</string>
+
+    <!-- Welcome In App Screen -->
+    <string name="welcome_in_app_screen_first"><![CDATA[<font color="#FFFFFF">"Is an honor to have<br/>you between "</font><font color="#04E601">"the first<br/>2.000 Beta-Testers "]]></string>
+    <string name="welcome_in_app_screen_second"><![CDATA[<font color="#FFFFFF">"Find the icon "</font><font color="#04E601">"Instructions"</font><font color="#FFFFFF">"<br/>to know all <br/>the rules"</font>]]></string>
+    <string name="welcome_in_app_screen_third"><![CDATA[<font color="#FFFFFF">"Win </font><font color="#FFDD03">+200m.</font> extra por cada<br/> amigo que se registre con<br/>"</font><font color="#04E601">"tu código de invitación"</font>]]></string>
+
+    <!-- Tutorial Screen -->
+    <string name="tutorial_screen_coin_title">What size is your Raddar?</string>
+    <string name="tutorial_screen_coin_description">Hearts are the total votes of the post (positive less negatives)</string>
+    <string name="tutorial_screen_top_rankings_title">Posts Ranking</string>
+    <string name="tutorial_screen_top_rankings_description">We introduce you the best posts in Raddar</string>
+    <string name="tutorial_screen_github_title">GitHub</string>
+    <string name="tutorial_screen_github_description">You can see the source code and more information on GitHub: https://github.com/jaimegc/raddarapp</string>
+    <string name="tutorial_screen_instructions_title">Instructions of the game</string>
+    <string name="tutorial_screen_instructions_description">All you need to know is here</string>
+    <string name="tutorial_screen_show_territory_title">Where Am I?</string>
+    <string name="tutorial_screen_show_territory_description">Tap this to check your current territory</string>
+    <string name="tutorial_screen_show_instructions_title">Instructions</string>
+    <string name="tutorial_screen_show_instructions_description">Some rules for the game</string>
+    <string name="tutorial_screen_scan_title">Scan posts</string>
+    <string name="tutorial_screen_scan_description">Tap here to detect all the posts around you</string>
+    <string name="tutorial_screen_menu_settings_title">Profile options</string>
+    <string name="tutorial_screen_menu_settings_description">Tap here to adjust all your settings</string>
+    <string name="tutorial_screen_audio_profile_title">Profile audio</string>
+    <string name="tutorial_screen_audio_profile_description">Tap here to listening your audio</string>
+    <string name="tutorial_screen_footprints_title">My posts</string>
+    <string name="tutorial_screen_footprints_description">Your total of published posts</string>
+    <string name="tutorial_screen_deaths_title">Killed</string>
+    <string name="tutorial_screen_deaths_description">All your posts deleted by the community</string>
+    <string name="tutorial_screen_votes_title">My votes</string>
+    <string name="tutorial_screen_votes_description">All you are voted</string>
+    <string name="tutorial_screen_compliments_title">Claps</string>
+    <string name="tutorial_screen_compliments_description">All your received claps</string>
+    <string name="tutorial_screen_stars_title">Average</string>
+    <string name="tutorial_screen_stars_description">Your average rating</string>
+    <string name="tutorial_screen_range_title">Your score</string>
+    <string name="tutorial_screen_range_description">All the votes you have received (positives - negatives)</string>
+    <string name="tutorial_screen_create_footprint_title">Publish your first post</string>
+    <string name="tutorial_screen_create_footprint_description">Tap here to publish your picture. \n\nReady?</string>
+    <string name="tutorial_screen_icon_profile_title">My profile</string>
+    <string name="tutorial_screen_icon_profile_description">Tap here to access to your profile and keep tapping to update</string>
+    <string name="tutorial_screen_previsualization_title">Preview your picture</string>
+    <string name="tutorial_screen_previsualization_description">Check how your picture will be actually published</string>
+    <string name="tutorial_screen_footprint_visible_title">Hide your position</string>
+    <string name="tutorial_screen_footprint_visible_description">Select your geolocation</string>
+    <string name="tutorial_screen_classificate_title">Classify your post</string>
+    <string name="tutorial_screen_classificate_description">Your post will play in this category</string>
+    <string name="tutorial_screen_influencer_title">Here is the ranking</string>
+    <string name="tutorial_screen_influencer_description">Here you will view the leader of every territory</string>
+    <string name="tutorial_screen_territory_name_title">Current territory</string>
+    <string name="tutorial_screen_territory_name_description">Here you will see the name of the territory</string>
+    <string name="tutorial_screen_territory_map_title">Explore a territory</string>
+    <string name="tutorial_screen_territory_map_description">Tap here to view the area of the territory</string>
+    <string name="tutorial_screen_territory_parent_title">Switch the territory</string>
+    <string name="tutorial_screen_territory_parent_description">Use the arrow icons to view upper or lower territories</string>
+    <string name="tutorial_screen_influencer_settings_title">Option icon</string>
+    <string name="tutorial_screen_influencer_settings_description">Tap here to refresh and asking for help</string>
+    <string name="tutorial_screen_coin_mined_title">Mine extra meters</string>
+    <string name="tutorial_screen_coin_mined_description">When you want to win extra meters</string>
+    <string name="tutorial_screen_promo_code_title">Invite your contacts</string>
+    <string name="tutorial_screen_promo_code_description">Comparte tu código de invitación con tus amigos y gana %1$s metros extra por cada registro. Además, tu amigo ganará %2$s metros. Eso se llama \"Karma Instantáneo\".</string>
+
+    <!-- Footprint Main Screen -->
+    <string name="flag_level_conventional">Flag\nConvencional</string>
+    <string name="flag_level_popular">Flag\nPopular</string>
+    <string name="flag_level_claimed">Flag\nAclamada</string>
+    <string name="flag_level_epic">Flag\nÉpica</string>
+    <string name="flag_level_legendary">Flag\nLegendaria</string>
+    <string name="flag_level_perpetual">Flag\nPerpetua</string>
+    <string name="flag_recent">RECIENTE</string>
+    <string name="flag_warning">This post is about to die</string>
+
+    <!-- Login Screen -->
+    <string name="login_facebook_button">Log in with Facebook</string>
+    <string name="login_google_button">Log in with Google</string>
+    <string name="login_ready">Ready to participate?</string>
+    <string name="login_terms_conditions">Terms and conditions</string>
+    <string name="register_login_email">Register with your email</string>
+    <string name="have_account">Already registered?</string>
+    <string name="have_account_log_in"><![CDATA[<u>Log in</u>]]></string>
+    <string name="login_continue">Continue</string>
+    <string name="login_retry">Try again</string>
+
+    <!-- Enter Login Screen -->
+    <string name="enter_login_incomplete">Complete your profile</string>
+    <string name="enter_login_congratulations_top">Congratulations %s!</string>
+    <string name="enter_login_congratulations_bottom">Remember to publish\n only the very best</string>
+
+    <!-- Enter Complete Profile Screen -->
+    <string name="enter_complete_profile_finish">Finish</string>
+    <string name="enter_complete_profile_birthdate">You were born on:</string>
+    <string name="enter_complete_profile_gender">Gender:</string>
+    <string name="enter_complete_profile_username">Confirm or edit your username:</string>
+    <string name="enter_complete_profile_terms_conditions"><![CDATA[<font color="#B3B3B3">"I\'m older than 13 years old and I accept <br/>"</font><font color="#FFFFFF">"<u>terms and conditions</u>"</font><font color="#B3B3B3">" of this app"</font>]]></string>
+    <string name="enter_complete_profile_hint_birthdate">dd/mm/yyyy</string>
+    <string name="enter_complete_profile_confirm_username">Confirm or edit your username</string>
+    <string name="enter_complete_profile_confirm_email">Confirm your email</string>
+    <string name="enter_complete_profile_confirm_facebook_email">Confirm your facebook email</string>
+
+    <!-- Promo Code Screen -->
+    <string name="promo_code_text_friends">Pulsa aquí si te han dado\nun código de invitación</string>
+    <string name="promo_code_top">Código válido</string>
+    <string name="promo_code_diagonal">Enhorabuena</string>
+    <string name="promo_code_title">%s metros extra</string>
+    <string name="promo_code_description">¡Tu código de invitación funciona!  Acabas de sumar %1$s metros extra a tu Raddar.\n\n
+    Tu también tendrás tu propio código de invitación para compartir con tus amigos. Tú ganarás %2$s metros extra por cada nuevo registro y tus amigos %3$s metros por registrase.</string>
+
+    <!-- My Friends Screen -->
+    <string name="my_friends_invite">Invite friends</string>
+    <string name="my_friends_title">Life is so much happier \n with friends.\n Raddar is the same.</string>
+    <string name="my_friends_invite_code">CodigoInvitacion</string>
+    <string name="my_friends_invite_text">Hey! Take a look of this app!</string>
+    <string name="my_friends_invite_subject">Invite your friends</string>
+    <string name="my_friends_invite_via">Share Raddar via: </string>
+
+    <!-- Promo Code Screen -->
+    <string name="promo_code_friends">¿Un amigo te dio un super\ncódigo de invitación?</string>
+    <string name="promo_code_hint_enter_here">Introdúcelo aquí</string>
+
+    <!-- Profile -->
+    <string name="profile_my_footprints">Photos</string>
+    <string name="profile_footprints">Photos</string>
+    <string name="profile_my_fans">My fans</string>
+    <string name="profile_footprints_deaths">Deads</string>
+    <string name="profile_footprints_votes">Votes</string>
+    <string name="profile_fans">Their fans</string>
+    <string name="profile_me_fan">I\'m fan of</string>
+    <string name="profile_fan">Is fan of</string>
+    <string name="profile_compliments">Claps</string>
+    <string name="profile_menu_edit">Edit profile</string>
+    <string name="profile_menu_logout">Log out</string>
+    <string name="profile_sms_my_own">Hey, This is you!</string>
+
+    <!-- Love Phrases -->
+    <string name="compliment_phrase1">Eres la\ncaña</string>
+    <string name="compliment_phrase2">Te\namo</string>
+    <string name="compliment_phrase3">Te\nquiero</string>
+    <string name="compliment_phrase4">Te\nadoro</string>
+    <string name="compliment_phrase5">Me\ngustas</string>
+    <string name="compliment_phrase6">Me\nencantas</string>
+    <string name="compliment_phrase7">Eres la\nbomba</string>
+    <string name="compliment_phrase8">Qué\ncrack</string>
+
+    <!-- Territories -->
+    <string name="territory_area">Territory:</string>
+    <string name="territory_total_footprints">Posts:</string>
+    <string name="territory_total_captures">Voteds:</string>
+    <string name="territory_show_ranking">View ranking</string>
+    <string name="territory_show_rankings">View ranking</string>
+    <string name="territory_followers">Followers:</string>
+
+    <!-- Main Screen -->
+    <string name="total_footprints_html"><![CDATA[ ¡Hay <b>%s flags</b> a tu alrededor!]]></string>
+    <string name="total_footprints">You have %s posts around you</string>
+    <string name="total_footprints_one">You have %s post around you</string>
+    <string name="welcome_top">Searching...</string>
+    <string name="welcome_bottom">Don\'t forget to activate your GPS :)</string>
+    <string name="sms_no_more_footprints_top_captured">There is nothing\n else around you</string>
+    <string name="sms_no_more_footprints_top_empty">¡Ops! You have\nvoted everything</string>
+    <string name="sms_no_more_footprints_bottom">This is your moment, \npublish your post!</string>
+    <string name="sms_no_more_footprints_searching_top">Searching new posts...</string>
+    <string name="sms_no_more_footprints_searching_bottom">Remember that \n you only view \n alive posts</string>
+    <string name="comments">comments</string>
+    <string name="comment">comment</string>
+    <string name="total_captures">Voted %s times</string>
+    <string name="total_captures_once">Voted once</string>
+    <string name="sms_loading_territory">Searching for a territory</string>
+    <string name="sms_loading_territory_area">Loading area...</string>
+    <string name="sms_save_collection">Add in my\ncollection</string>
+    <string name="emoji_world">\ud83d\ude03</string>
+    <string name="sms_empty_leaders">There is no leader. Be the first!</string>
+
+    <!-- Create Footprint Screen -->
+    <string name="upload_photo">Publish a photo</string>
+    <string name="hint_create_footprint_all">Your message...</string>
+    <string name="hint_create_footprint_friends">Tu mensaje para tus amigos...</string>
+    <string name="hint_create_footprint_only_me">Tu mensaje solo para ti...</string>
+    <string name="share_story">Publish your photo! </string>
+    <string name="who_can_see">¿Quién puede verla? </string>
+    <string name="rb_all">todos</string>
+    <string name="rb_friends">mis amigos</string>
+    <string name="rb_only_me">solo yo</string>
+    <string name="accuracy">Precision:</string>
+    <string name="save_image">Save</string>
+    <string name="default_accuracy">*??m</string>
+    <string name="time_distance_now_here">Here and now</string>
+    <string name="hint_title">Your title... (optional)</string>
+    <string name="hint_description">Write more here... (optional) </string>
+    <string name="loading_create_footprint">Publishing</string>
+    <string name="only_google_play">Only available in</string>
+    <string name="share_flag">Share it!</string>
+    <string name="share_flag_via">share it via: </string>
+    <string name="share_flag_subject">Vote my new post!</string>
+    <string name="share_flag_text">
+    <!-- *!Vótame!* ❤ *Raddar es un juego social basado en geolocalización 🌐. Busca 🔎 *Raddar - Ranking de Líderes Locales* en Google Play (o directamente por este link https://goo.gl/xxoRa3). Al registrarte, usa mi código de invitación 👉 %1$s 👈 y te llevarás *+%2$s m.* extra (metros). -->
+        *!Vote my post!* ❤ Search 🔎 *Raddar Social Ranking* in Google Play (o use this link link https://goo.gl/4qBXo2)
+    </string>
+    <string name="share_promo_code">Share it now!</string>
+    <string name="share_promo_code_via">Comparte tu código de invitación por</string>
+    <string name="share_promo_code_subject">¡Descarga Raddar - Ranking Social con mi código de activación!</string>
+    <string name="share_promo_code_text">*!Vota mi foto!* ❤ Busca 🔎 *Raddar Ranking Social* en Google Play (o directamente por este link https://goo.gl/4qBXo2)</string>
+    <string name="promo_code">CodigoActivacion</string>
+    <string name="select_category">Choose a ranking</string>
+
+    <!-- Ranking Screen -->
+    <string name="title_our_leaders">Todos los Rankings</string>
+    <string name="phrase_ranking">De lo mejor, lo superior</string>
+    <string name="diagonal_coming_soon">próximamente</string>
+    <string name="leader_influencers">Los mejores jugadores</string>
+    <string name="greater_raddar">Los más aclamados</string>
+    <string name="highest_rated_footprints">Top 100 mundial</string>
+    <string name="greater_compliments">Los más aplaudidos</string>
+    <string name="phrase_leader_influencers">Para los mejor votados en cada territorio</string>
+    <string name="phrase_greater_raddar">Para los que reciben mejor votación</string>
+    <string name="phrase_greater_compliments">Para los jugadores más aclamados</string>
+    <string name="phrase_highest_rated_footprints">Para las publicaciones más top</string>
+    <string name="text_ranking_more">Ver ranking completo</string>
+
+    <!-- Collection Screen -->
+    <string name="title_collection">Tu colección de fotos</string>
+    <string name="phrase_collection">De lo bueno, lo mejor</string>
+    <string name="flags_collection">Fotos coleccionadas</string>
+    <string name="insignia_collection">Insignias</string>
+    <string name="coffer_collection">Cofres</string>
+    <string name="phrase_flags_collection">Solo tus coleccionadas</string>
+    <string name="phrase_insignia_collection">Secretos encontrados</string>
+    <string name="phrase_coffer_collection">Bonificaciones irresistibles</string>
+
+    <!-- Insignias -->
+    <string name="insignia_hashtag">#INSIGNIA</string>
+
+    <!-- Influencers Screen -->
+    <string name="empty_leaders">There is no leader here\nPublish a photo\nand conquer the territory</string>
+    <string name="loading_territories">Searching territory</string>
+    <string name="loading_leaders">Searching leaders</string>
+    <string name="territory_leaders">Leaders of the terrotory</string>
+    <string name="territory_leaders_phrase">Top players here</string>
+    <string name="territory_actual_position_text">Your range:</string>
+    <string name="territory_actual_players_text">Players:</string>
+    <string name="territory_actual_position_unknown">---</string>
+    <string name="text_best_flags">is the main leader in this territory</string>
+    <string name="text_total_influence2">score in this territory</string>
+    <string name="text_flags_here">posts here</string>
+    <string name="text_likes">positives</string>
+    <string name="text_stars2">quality (votes)</string>
+    <string name="text_total_influencer">points earned in this territory</string>
+    <string name="text_stars">average valuation</string>
+    <string name="text_dislikes">negatives</string>
+    <string name="text_compliments">claps</string>
+    <string name="text_actual_leader">Leadder</string>
+    <string name="my_users_ranking_toolbar">Ranking</string>
+    <string name="loading_users_ranking">Loading ranking</string>
+    <string name="show_ranking_leaders">View more rankings</string>
+    <string name="show_ranking_help">Help</string>
+
+    <!-- Comments Screen -->
+    <string name="comment_your_footprint">Write your comment...</string>
+    <string name="comments_toolbar">Comments</string>
+
+    <!-- Footprint Details Screen -->
+    <string name="show_all_comments">View all</string>
+
+    <!-- Login Raddar Screen -->
+    <string name="loading">Loading</string>
+    <string name="loading_flags">Loading picture</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="login_email">Email</string>
+    <string name="login_repeat_password">Confirm your password</string>
+
+    <!-- Register Screen -->
+    <string name="register_name">Name</string>
+    <string name="register_surname">Surname</string>
+    <string name="register_birthdate">Birthdate</string>
+    <string name="register_email">Email</string>
+    <string name="register_repeat_email">Confirm your email</string>
+    <string name="register_username">Username</string>
+    <string name="register_password">Password</string>
+    <string name="register_repeat_password">Confirm your password</string>
+    <string name="register_terms_conditions"><![CDATA[<font color="#B3B3B3">"I\'m older than 13 years old<br/>"</font><font color="#FFFFFF">"<u>and confirm terms and conditions</u>"</font><font color="#B3B3B3">" of the app"</font>]]></string>
+
+    <!-- My Footprints Screen -->
+    <string name="my_footprints_toolbar">My photos</string>
+    <string name="my_footprints_loading">Loading photos</string>
+    <string name="my_footprints_empty">Nothing in your photos</string>
+    <string name="my_footprints_empty_my_promo_code_seconds">Estamos generando tu código de invitación, inténtalo de nuevo en unos segundos</string>
+    <string name="my_footprints_empty_my_promo_code_minutes">Estamos generando tu código de invitación, inténtalo de nuevo en unos minutos</string>
+
+    <!-- My Footprints Collection Screen -->
+    <string name="my_footprints_collection_toolbar">My collection</string>
+    <string name="my_footprints_collection_empty">Nothing in your collection\n\n keep tapping a post before\nyou vote it to save here</string>
+
+    <!-- Footprints Ranking Screen -->
+    <string name="footprints_ranking_toolbar">Ranking Top </string>
+    <string name="footprints_ranking_world">World</string>
+    <string name="footprints_ranking_diagonal_top">TOP</string>
+    <string name="footprints_ranking_empty">There is no TOP here</string>
+
+    <!-- Settings Screen -->
+    <string name="edit_my_profile_username">Username</string>
+    <string name="edit_my_profile_email_hint">Email</string>
+    <string name="edit_my_profile_username_hint">Username</string>
+    <string name="edit_my_profile_name_hint">Name</string>
+    <string name="edit_my_profile_surname_hint">Surname</string>
+    <string name="edit_my_profile_actual_password_hint">Current password</string>
+    <string name="edit_my_profile_new_password_hint">New password</string>
+    <string name="edit_my_profile_repeat_password_hint">Confirm new password</string>
+    <string name="edit_my_profile_password_changed">Yes. Your new password was saved</string>
+    <string name="edit_my_profile_new_email_hint">New email</string>
+    <string name="edit_my_profile_repeat_email_hint">Confirm your new email</string>
+    <string name="edit_my_profile_update_password">Change password</string>
+    <string name="edit_my_profile_record_audio">Record audio</string>
+    <string name="edit_my_profile_image">Change photo</string>
+    <string name="edit_my_profile_update_email">Change email</string>
+    <string name="message_profile_audio_top">Your profile audio</string>
+    <string name="message_profile_audio_bottom">Keep tapping to record\nyour 10 seconds profile audio</string>
+    <string name="edit_my_profile_change_username">Change your username</string>
+    <string name="edit_my_profile_change_name">Change name</string>
+    <string name="edit_my_profile_change_surname">Change surname</string>
+    <string name="edit_my_profile_change_email">Change email</string>
+    <string name="edit_my_profile_change_password">Change password</string>
+    <string name="edit_my_profile_logout">Switch down</string>
+    <string name="edit_my_profile_promo_code">Share my invitation code</string>
+    <string name="edit_my_profile_logout_message">Keep tapping ☛ Switch down ☚ to log out</string>
+    <string name="edit_my_profile_title">PROFILE</string>
+    <string name="edit_my_profile_change_field_username">What\'s your username?</string>
+    <string name="edit_my_profile_change_field_name">What\'s your name?</string>
+    <string name="edit_my_profile_change_field_surname">What\'s your surname?</string>
+    <string name="edit_my_profile_change_field_email">What\'s your email?</string>
+    <string name="edit_my_profile_change_field_password">What\'s your password?</string>
+    <string name="edit_my_profile_change_password_ok">Yeah! Your password has been changed.</string>
+    <string name="my_profile_preferences_title">PREFERENCES</string>
+    <string name="my_profile_preferences_sounds">Sounds</string>
+    <string name="my_profile_notifications_title">NOTIFICATIONS</string>
+    <string name="my_profile_notifications_comments">Comments</string>
+    <string name="my_profile_notifications_footprints_favs">Saved posts</string>
+    <string name="my_profile_notifications_compliments">Incoming claps</string>
+    <string name="my_profile_notifications_footprints_dead">Dead posts</string>
+    <string name="my_profile_notifications_footprints_dead_warning">Close-to-dead posts</string>
+    <string name="my_profile_more_information_title">MORE INFO</string>
+    <string name="my_profile_more_information_tutorial">Instructions</string>
+    <string name="my_profile_more_information_send_comments">Send comments and suggests </string>
+    <string name="my_profile_more_information_propose_new_territories">Ask for new territories</string>
+    <string name="my_profile_more_information_thanks">Thanks to</string>
+    <string name="my_profile_technical_title">EXTRAS</string>
+    <string name="my_profile_technical_terms_conditions">Terms and conditions</string>
+    <string name="my_profile_technical_privacity_policy">Privacy policy</string>
+    <string name="my_profile_technical_desactivate_account">Deactivate my account</string>
+    <string name="my_profile_technical_remove_account">Remove my account</string>
+    <string name="my_profile_technical_licenses">Licences</string>
+    <string name="my_profile_technical_work">Work with us</string>
+    <string name="my_profile_technical_about_developers">About the developers</string>
+    <string name="my_profile_text_more_my_footprints">Load all\n my posts</string>
+    <string name="my_profile_text_empty_my_footprints">Publish your\n first post</string>
+    <string name="dialog_activate_top">Activate user</string>
+    <string name="dialog_desactivate_top">Deactivate my account</string>
+    <string name="dialog_activate_description">Activate my account</string>
+    <string name="dialog_desactivate_description">If you want to deactivate your account (not remove it) fill all the steps</string>
+    <string name="dialog_activate">ACTIVATE</string>
+    <string name="dialog_desactivate">DEACTIVATE</string>
+    <string name="dialog_exit">EXIT</string>
+    <string name="dialog_affirmative_one">I want to do it</string>
+    <string name="dialog_affirmative_two">I\'m sure</string>
+    <string name="dialog_affirmative_three">Confirmed</string>
+    <string name="dialog_select_all_checkboxes">You have to select all the steps</string>
+
+    <!-- Webs-->
+    <string name="url_web">https://raddarapp.com</string>
+    <string name="url_terms_conditions">https://raddarapp.com/terminos-y-condiciones/</string>
+    <string name="url_privacity_policy">https://raddarapp.com/terminos-y-condiciones/#section1</string>
+    <string name="url_licenses">https://raddarapp.com/licencias/</string>
+    <string name="url_work">https://raddarapp.com/trabaja-con-nosotros/</string>
+    <string name="url_about_developers">https://raddarapp.com/sobre-los-desarrolladores/</string>
+    <string name="url_thanks">https://raddarapp.com/agradecimientos/</string>
+    <string name="url_github">https://github.com/jaimegc/raddarapp</string>
+
+    <!-- Coin Mining Screen -->
+    <string name="coin_mining_title">Minar metros extra</string>
+    <string name="coin_mining_mined">Metros minados:</string>
+    <string name="coin_mining_exchange">Canjear</string>
+    <string name="coin_mining_exchanged_today">Metros canjeados hoy:</string>
+    <string name="coin_mining_mined_finished">Te quedan:</string>
+
+    <!-- Crash Screen -->
+    <string name="crash_message_top">¡¡ Sorry !!</string>
+    <string name="crash_message_middle">... :( :( :(</string>
+    <string name="crash_message_bottom">We are nervous with\n your presence </string>
+    <string name="crash_button_restart">Restart the app</string>
+
+    <!-- Help Screen -->
+    <string name="help_title">Help</string>
+
+    <!-- User Profile Screen -->
+    <string name="user_profile_text_more_user_footprints">Load all\n your posts</string>
+    <string name="user_footprints_loading">Loading posts</string>
+    <string name="user_footprints_toolbar">His posts</string>
+    <string name="user_footprints_text_empty">His first post\n will be published soon</string>
+
+    <!-- Game Instructions Screen -->
+    <string name="game_instructions_toolbar">Instructions</string>
+    <string name="game_instructions_initial"><![CDATA[<font color="#FF00FE">"<br/>¿De qué va todo esto?"</font><br/><br/><br/>
+    <font color="#FFFFFF">"Raddar es un juego social basado en geolocalización, pero eso ya lo sabes. Para que conozcas los detalles más importantes, hemos preparado unas instrucciones con más info imprescindible y muchos secretos.<br/><br/>"</font>
+    <font color="#FFFFFF">"Pero antes, queremos adelantarte las 4 formas para ganar metros en tu Raddar:<br/><br/>"</font>
+    <font color="#04E601">"✔ "</font><font color="#FFFFFF">Publicando flags. Publica cosas chulas en lugares concurridos.<br/><br/>"</font>
+    <font color="#04E601">"✔ "</font><font color="#FFFFFF">Votando todo lo que pillas. Cuando votas, obtienes el valor de la flag.<br/><br/>"</font>
+    <font color="#04E601">"✔ "</font><font color="#FFFFFF">Minando metros extra, hasta <font color="#FFDD03">"+200m."</font><font color="#FFFFFF">" "por día."</font><br/><br/>
+    <font color="#04E601">"✔ "</font><font color="#FFFFFF">Invitando a tus amigos. <font color="#FFDD03">"+200m."</font><font color="#FFFFFF">" "por cada uno."</font><br/><br/><br/>
+    <font color="#FFFFFF">"Como habrás visto, en Raddar todo lo medimos en metros. Por lo que tener un Raddar grande (con muchos metros) te hará posicionarte como un usuario relevante en el juego. Tus metros sirven para ampliar tu alcance (puedes encontrar más flags publicacadas a tu alrededor), sirven para aumentar tu nivel y para canjearlos por diferentes premios y privilegios (próximamente).<br/><br/>"</font>
+    <font color="#FFFFFF">"En Raddar puedes <font color="#FF00FE">"votar anónimamente "</font>todas las publicaciones que están a tu alcance, es decir, las que aparecen dentro de tu Raddar. Cada vez que una flag es votada, aumenta su valor gracias a tu voto positivo. Si tu voto es negativo el valor de la flag será reducido... ¿Pero cuánto? Eso depende de tu nivel. Si eres jugador de nivel 5, sumarás <font color="#FFDD03">"0,05m."</font> con tus votos positivos y restarás <font color="#FFDD03">"0,05m."</font> con los negativos.<br/><br/>"</font>]]></string>
+    <string name="game_instructions_message0"><![CDATA[<font color="#FFFFFF">"<br/>  Una flag (bandera en inglés) es <font color="##FF00FE">"una publicación instantánea y geolocalizada"</font><font color="#FFFFFF">". Tu flag te permite competir en el territorio donde estás. Publica en tu barrio, tu zona, tu distrito, tu ciudad... Publica donde quieras. Hemos creado miles de territorios y rankings a tu alrededor.<br/><br/>
+    Una flag es algo parecido a una carta de juego y se compone de diferentes elementos (ver la imagen). Lo más importante y que debes recordar es que cada flag cuenta con su propio valor. Este valor dependerá del total de votaciones recibidas y representa, además, la recompensa que obtienes al votarla. Por ejemplo, si una flag vale <font color="#FFDD03">"4,89m."</font> (como en la imagen), ganarás <font color="#FFDD03">"+4,89m."</font>  extra para tu Raddar solo por votarla (tanto si tu voto es positivo, como lo contrario).   <br/><br/> "</font>]]></string>
+    <string name="game_instructions_message1"><![CDATA[<font color="#FFFFFF">" Arrastra la flag hacia arriba para votar positivamente todo a tu alcance. Al hacerlo, la flag desaparece de tu Raddar y no volverás a verla (salvo que la colecciones). Al votar, afectarás directamente al valor de la flag. <br/><br/>
+    Tu voto positivo se representa con 5 estrellas (<font color="#FF00FE">"★★★★★"</font>) y el jugador que publicó (autor), recibirá un mejor promedio gracias a tu votación. Además, el autor, recibe en recompensa el valor de tu votación (Ej: <font color="#FFDD03">"+5m."</font> extra, si tu nivel es 5).<br/>"</font>]]></string>
+    <string name="game_instructions_message2"><![CDATA[<font color="#FFFFFF">" Para votar negativamente, desliza (arrastra) la flag hacia abajo. Al hacerlo la publicación desaparece y afectarás directamente a su valor (ver paso anterior).<br/>
+    Recuerda que tu voto negativo se representa con 1 estrella (<font color="#FF00FE">"★"</font>) y esto afectará negativamente al promedio de su autor (quien la publicó)."</font>]]></string>
+    <string name="game_instructions_message3"><![CDATA[<font color="#FFFFFF">"  Afirmativo, una vez que votas, ¡Bye Bye! Ya no hay marcha atrás, esa publicación (flag) desaparecerá de tu Raddar. Si quieres mantenerla, puedes coleccionarla, eso sí."</font>]]></string>
+    <string name="game_instructions_message4"><![CDATA[<font color="#FFFFFF">"   <br/>Guarda en tu colección tus flags favoritas ❤ y aquellas que quieras recordar. Para hacerlo, solo tienes que activar la función \"guardar en mi colección\", pulsando unos segundos sobre la flag. Cuando esté activa ya puedes ejercer tu votación y tu flag será automáticamente guardada en tu colección."</font>]]></string>
+    <string name="game_instructions_message5"><![CDATA[<font color="#FFFFFF">"   Claro que sí. Si te arrepientes de una flag publicada, puedes eliminarla. Para esto, debes estar 100% seguro, ya que si lo haces, ya no habrá marcha atrás. Eliminar una flag es muy sencillo. Ve a tu perfil, encuentra la publicación que quieres borrar y mantenla pulsada unos segundos."</font>]]></string>
+    <string name="game_instructions_message6"><![CDATA[<font color="#FFFFFF">"
+    Tener un nivel alto en Raddar es símbolo de un gran jugador. Para subir de nivel necesitas aumentar tus metros totales en tu Raddar. Conforme van creciendo tus metros, también lo hará tu nivel... ¡Ten paciencia!<br/><br/>
+    Tener un mayor nivel te permitirá tambíén una mayor potencia en tus votos (afectarás más al valor de cada flag votada). Un mayor nivel también te permite ver más publicaciones de otros usuarios desconocidos (que no son tus amigos o fans).<br/>"</font>]]></string>
+    <string name="game_instructions_message7"><![CDATA[<font color="#FFFFFF">"<br/>¿Minar metros? Minar es ese verbo tan de moda donde puedes generar Bitcoins y cosas raras... en Raddar también puedes hacerlo. Puedes generar hasta <font color="#FFDD03">"+200m."</font> extra minando con tus dedos. ¿Con tus dedos? Sí. Pulsa la pantalla cientos de veces para ir minando monedas (metros). Es totalmente gratis y súper divertido; además es una manera perfecta para aumentar tu Raddar. Recuerda, eso sí, que solo podrás minar un máximo de <font color="#FFDD03">"+200m."</font> cada 24 horas. Busca el icono de minado en tu perfil o en la pantalla de ajustes y ¡comienza a minar!"</font>]]></string>
+    <string name="game_instructions_message8"><![CDATA[<font color="#FFFFFF">"¿Quieres aún más metros extra? Puedes invitar a tus amigos compartiendo tu propio código de invitación. Al hacerlo, recibirás <font color="#FFDD03">"200m."</font> extra con cada amigo que introduzca tu código al registrarse... además, ellos recibirán otros <font color="#FFDD03">"1.000m."</font> extra solo por haberlo usado. A esto lo llamamos \"Karma Instantáneo\".<br/><br/>"</font>]]></string>
+    <string name="game_instructions_message9"><![CDATA[<font color="#FFFFFF">"Como todo juego, siempre hay alguien que gana. En Raddar también tenemos líderes, que se posicionan en los primeros puestos de cada ranking. Hay miles de Rankings, uno por cada territorio (barrios, ciudades, países, etc). Publica tus flags y comprueba tu puesto en cada ranking en el que compitas."</font>]]></string>
+    <string name="game_instructions_message10"><![CDATA[<font color="#FFFFFF">"<br/>Metros, metros, metros. En Raddar todo lo medimos en metros (<font color="#FFDD03">"m."</font>), nuestra moneda oficial. Y es que en Raddar el tamaño SÍ importa. Cuantos más metros tienes, mayor será tu visibilidad y tu nivel.<br/><br/>
+    Recuerda que puedes sumar metros votando y minando, pero los metros más importantes, los metros que cuentan, son los que generas en un determinado territorio. Esto hará que puedas escalar posiciones en el ranking de tu barrio o tu ciudad."</font>]]></string>
+    <string name="game_instructions_message11"><![CDATA[<font color="#FFFFFF">"Navega entre los diferentes territorios para descubrir al líder en cada Ranking. Puedes usar las flechas de navegación para subir y bajar de cada territorio."</font>]]></string>
+
+    <string name="game_instructions_message12"><![CDATA[<font color="#FF00FE"><br/><br/><br/><br/>"    Definiciones:"</font><br/><br/>
+
+    <font color="#04E601">"Alcance: "</font>La amplitud de tu Raddar. Lo que sí puedes ver.<br/><br/>
+    <font color="#04E601">"Amigo: "</font>Cuando hay una relación mutua (dos jugadores se siguen).<br/><br/>
+    <font color="#04E601">"Aplausos: "</font>El mejor reconocimiento a otro usuario.<br/><br/>
+    <font color="#04E601">"Audio de perfil: "</font>Audios 10 seg. grabados en tu perfil.<br/><br/>
+    <font color="#04E601">"Beta: "</font>App en versión de prueba.<br/><br/>
+    <font color="#04E601">"Beta-Tester: "</font>Los que prueban oficialmente la app.<br/><br/>
+    <font color="#04E601">"Canjear: "</font>Convertir metros a tu favor.<br/><br/>
+    <font color="#04E601">"Clasificar: "</font>Elegir una categoría acertada.<br/><br/>
+    <font color="#04E601">"Colección: "</font>Tus cosas guardadas en favoritos.<br/><br/>
+    <font color="#04E601">"Compartir: "</font>El principal acto de generosidad.<br/><br/>
+    <font color="#04E601">"Desinstalar: "</font>Lo que no debes hacer.<br/><br/>
+    <font color="#04E601">"Flag: "</font>"</font>Publicación geolocalizada, tomada en tiempo real.<br/><br/>
+    <font color="#04E601">"Invitar: "</font>Traer amigos al juego siempre es mejor.<br/><br/>
+    <font color="#04E601">"Líder local:"</font> El líder principal de un ranking.<br/><br/>
+    <font color="#04E601">"Líderes:"</font> Los que ocupan las primeras posiciones en un ranking.<br/><br/>
+    <font color="#04E601">"Minar: "</font>Generar metros de la nada.<br/><br/>
+    <font color="#04E601">"Nivel: "</font>Tu importancia como jugador.<br/><br/>
+    <font color="#04E601">"Publicar: "</font>La acción principal de juego.<br/><br/>
+    <font color="#04E601">"Ranking: "</font>Listado por orden de importancia.<br/><br/>
+    <font color="#04E601">"Ser fan: "</font>Seguir a otro usuario.<br/><br/>
+    <font color="#04E601">"Territorio: "</font>Una zona, barrio o ciudad.<br/><br/>
+    <font color="#04E601">"Valor de una flag:"</font> Tu recompensa por votarla.<br/><br/>"</font>]]></string>
+
+    <!-- Coming Soon Screen -->
+    <string name="coming_soon_top">Coming soon</string>
+    <string name="coming_soon_diagonal_beta">Working</string>
+    <string name="coming_soon_flags_title">Your favourite posts</string>
+    <string name="coming_soon_flags_description">Remember: when you vote a post it will disapear from your raddar. \n\n To collect it, keep tapping the post.</string>
+    <string name="coming_soon_insignias_title">Insignias encontradas</string>
+    <string name="coming_soon_insignias_description">¿Qué te parece si escondemos insignias y medallas por el mapa? Pensamos que sería divertido si por encontrarlas con tu Raddar, puedas llevarte recompensas. \n\n ¿Te gusta la idea?</string>
+    <string name="coming_soon_coffers_title">Cofres descubiertos</string>
+    <string name="coming_soon_coffers_description">Sería chulo que además, puedas encontrar regalos directos y bonificaciones.. Unas entradas al cine, unas pizzas, un viaje, un mes de pelis premium...  \n\n ¿Qué opinas?</string>
+    <string name="coming_soon_friends_fans_title">Friends &amp; Fans</string>
+    <string name="coming_soon_friends_fans_description">You will connect with them very soon</string>
+    <string name="coming_soon_edit_profile_title">Edit profile</string>
+    <string name="coming_soon_edit_profile_description">You could edit it soon</string>
+    <string name="coming_soon_about_developers_title">From the other side of your screen</string>
+    <string name="coming_soon_about_developers_description">Hey!! We love what we do and we couldn\'t do it without you. We are KREOMI™ and you can write us here: hello@kreomi.com</string>
+    <string name="coming_soon_licenses_title">Licences</string>
+    <string name="coming_soon_licenses_description">You will see our licences very soon</string>
+    <string name="coming_soon_privacity_policy_title">Privacy policy</string>
+    <string name="coming_soon_privacity_policy_description">You will see our privacy policy very soon</string>
+    <string name="coming_soon_information_thanks_title">Thanks to</string>
+    <string name="coming_soon_information_thanks_description">We will show a list with our partners and collaborators \n\n </string>
+    <string name="coming_soon_information_leaders_influencers_title">Incoming votes</string>
+    <string name="coming_soon_information_leaders_influencers_description">A ranking with the top users</string>
+    <string name="coming_soon_information_greater_raddar_title">Líderes de visibilidad</string>
+    <string name="coming_soon_information_greater_raddar_description">Un ranking para los más poderosos, los que más metros tienen en su Raddar. Aquí se posicionan los usuarios con mayor nivel y por lo tanto un mayor alcance de visibilidad.</string>
+    <string name="coming_soon_information_best_flags_title">Te mostramos lo más top</string>
+    <string name="coming_soon_information_best_flags_description">Este es el Ranking para las mejores fotos en Raddar, las más valiosas, las mejor valoradas, las más ocurrentes, ingeniosas y creativas.</string>
+    <string name="coming_soon_information_greater_compliments_title">La gente te admira</string>
+    <string name="coming_soon_information_greater_compliments_description">Recibe aplausos infinitos de la gente que te admira y de otros jugadores a tu alrededor. Aplaudir es gratis y los más aplaudidos también tienen su Ranking Mundial.</string>
+    <string name="coming_soon_coins_mined_title">Ve preparando tus dedos</string>
+    <string name="coming_soon_coins_mined_description">Consigue hasta 200 metros extra cada 24 horas haciendo cientos de clicks en el área de minado.  \n\nDesgasta tus dactilares minando y sumando metros a lo loco. Para canjearlos tendrás que generar un mínimo de 2 metros y hasta 200 metros máximo dentro del tiempo señalado. </string>
+    <string name="footprint_dead_title">RIP</string>
+    <string name="footprint_dead_description">This post is dead. People have decided it. This post didn\'t deserve to be alive, so it is dead. Life is cruel, Raddar is cruel too.</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_close">CLOSE</string>
+    <string name="dialog_option_clicked">Keep tap to confirm</string>
+    <string name="dialog_copy_promo_code">COPY</string>
+    <string name="dialog_share_promo_code">SHARE</string>
+    <string name="dialog_share_promo_code_title">Tu súper código de invitación</string>
+    <string name="dialog_share_promo_code_message">Compártelo con tus amigos y gana %1$s metros extra por cada registro. Tu amigo ganará %2$s metros.</string>
+    <string name="dialog_share_promo_code_generating">Generando compartir, un plis...</string>
+
+    <!-- Dialog My Footprint -->
+    <string name="dialog_my_footprint_title">What do you want to do?</string>
+    <string name="dialog_my_footprint_discard_footprint">Delete post forever</string>
+    <string name="dialog_cancel">CANCEL</string>
+
+    <!-- Dialog Date Picker -->
+    <string name="dialog_date_picker_confirm">CONFIRM</string>
+    <string name="dialog_date_picker_cancel">CANCEL</string>
+    <string name="dialog_date_picker_day">DAY</string>
+    <string name="dialog_date_picker_month">MONTH</string>
+    <string name="dialog_date_picker_year">YEAR</string>
+
+    <!-- Help Screen -->
+    <string name="help_top">How it works?</string>
+    <string name="help_diagonal">Information</string>
+    <string name="help_leaders_title">Do you want to be a leader?</string>
+    <string name="help_leaders_description">If you want to be a leader let us to share this advices:
+    \n\n ✔ Publish only actractive posts.
+    \n\n ✔ Use empathy.
+    \n\n ✔ Take excellent pictures.
+    \n\n ✔ Write nice titles and descriptions. It really works.
+    \n\n ✔ Don\'t publish ofenses.
+
+    \n\n ✔ Select the suitable category.
+    \n\n ✔ Publish frequently. Posts disappear when you vote them.
+    \n\n ✔ Share your posts with your friends.
+    \n\n ✔ Vote your posts positively.\n
+
+        </string>
+
+    <string name="help_collection_title">What is your collection?</string>
+    <string name="help_collection_description">You will see a list with your favourite posts. Remember tha you can add a posts to your collection activating it before you vote it.</string>
+
+    <string name="help_create_footprint_title">What to publish?</string>
+    <string name="help_create_footprint_description">Publish astonishing posts with nice pics and the people will love you.</string>
+
+    <string name="help_main_coin_title">Only the bests posts stay in Raddar.</string>
+    <string name="help_main_coin_description">The worst posts just die, only the bests posts will survive.</string>
+
+    <string name="help_user_profile_title">Be a fan</string>
+    <string name="help_user_profile_description">Not yet but soon. You will be a fan of the peple you like.</string>
+
+    <!-- Work Screen -->
+    <string name="work_top">Work with us</string>
+    <string name="work_diagonal">Job</string>
+    <string name="work_title">Do you want to work with us?</string>
+    <string name="work_description">Te mandamos a la web</string>
+
+    <!-- News Screen -->
+    <string name="news_raddar_top">What\'s new?</string>
+    <string name="news_raddar_diagonal">Recent features</string>
+    <string name="news_raddar_title">This version is Beta v%s</string>
+    <string name="news_raddar_description">
+        News: \n\n
+        ✔ Images from Gallery\n\n
+        ✔ Translates\n\n
+        ✔ Bug fixes\n\n
+
+        Once more... ❤ THANKS ❤\n
+    </string>
+
+    <!-- Emojis Categories -->
+    <string name="category_love">#Love</string>
+    <string name="category_things">#Things</string>
+    <string name="category_people">#People</string>
+    <string name="category_proposal">#Proposals</string>
+    <string name="category_extreme">#Extreme</string>
+    <string name="category_moments">#Moments</string>
+    <string name="category_extranger">#Wired</string>
+    <string name="category_gastronomy">#Gastronomy</string>
+    <string name="category_lol">#LOL</string>
+    <string name="category_secret">#Secrets</string>
+    <string name="category_sexy">#Sexy</string>
+    <string name="category_troll">#Troll </string>
+    <string name="category_complain">#Complain</string>
+    <string name="category_joke">#Joke</string>
+    <string name="category_insanity">#Crazyness</string>
+    <string name="category_sport">#Sports</string>
+    <string name="category_news">#News</string>
+    <string name="category_animals">#Animals</string>
+    <string name="category_question">#Questions</string>
+    <string name="category_interesting">#Interesting</string>
+    <string name="category_art">#Art</string>
+    <string name="category_travel">#Travel</string>
+    <string name="category_fear">#Fear</string>
+    <string name="category_family">#Family</string>
+    <string name="category_unclassified">#Unclassified</string>
+    <string name="category_places">#Places</string>
+    <string name="category_shopping">#Shopping</string>
+    <string name="category_party">#Party</string>
+    <string name="category_advice">#Advices</string>
+    <string name="category_surprise">#Surprises</string>
+    <string name="category_challenge">#Challenge</string>
+    <string name="category_idea">#Idea</string>
+    <string name="category_brand">#Marcs</string>
+    <string name="category_friki">#Friky</string>
+    <string name="category_hater">#Hater</string>
+    <string name="category_hype">#Hype</string>
+    <string name="category_wtf">#WTF</string>
+    <string name="category_yolo">#Yolo</string>
+    <string name="category_friends">#Friends</string>
+    <string name="category_relax">#Relax</string>
+    <string name="category_empty">\?\?\?</string>
+
+    <!-- Social Network -->
+    <string name="social_network_instagram">Instagram</string>
+    <string name="social_network_facebook">Facebook</string>
+    <string name="social_network_snapchat">Snapchat</string>
+    <string name="social_network_youtube">Youtube</string>
+    <string name="social_network_google_plus">Google Plus</string>
+    <string name="social_network_pinterest">Pinterest</string>
+    <string name="social_network_select_your">Social Networks</string>
+    <string name="social_network_coming_soon">Comming soon</string>
+    <string name="social_network_select_me">My social networks</string>
+
+    <!-- Measures -->
+    <string name="measure_square_meters_html"><![CDATA[ m<sup><small>2</small></sup> ]]></string>
+
+    <!-- Time -->
+    <string name="time_ago_prefix"></string>
+    <string name="time_ago_suffix">ago</string>
+    <string name="time_ago_now">Now</string>
+    <string name="time_ago_seconds">seconds</string>
+    <string name="time_ago_minute">a minute</string>
+    <string name="time_ago_minutes">%d minutes</string>
+    <string name="time_ago_hour">an hour</string>
+    <string name="time_ago_hours">%d hours</string>
+    <string name="time_ago_day">a day</string>
+    <string name="time_ago_days">%d days</string>
+    <string name="time_ago_month">a month</string>
+    <string name="time_ago_months">%d months</string>
+    <string name="time_ago_year">a year</string>
+    <string name="time_ago_years">%d years</string> -->
+
+    <!-- Distance -->
+    <string name="distance_from">a %s</string>
+    <string name="zone_parent_name">%1$s, %2$s</string>
+    <string name="zone_name">%s</string>
+    <string name="zone_in">at</string>
+
+    <!-- CropView -->
+    <string name="crop_image_activity_title"></string>
+    <string name="crop_image_menu_rotate_left">Rotate</string>
+    <string name="crop_image_menu_rotate_right">Rotate</string>
+    <string name="crop_image_menu_rotate_crop">Rotate Crop</string>
+    <string name="crop_image_menu_crop">Save</string>
+    <string name="pick_image_intent_chooser_title">Choose an option</string>
+    <string name="saving_image">Saving...</string>
+    <string name="select_photo_option">Choose an option...</string>
+    <string name="select_photo_from">Select a picture from...</string>
+    <string name="select_photo_from_remove">What do you want to do?</string>
+    <string name="select_photo_gallery">Open gallery</string>
+    <string name="select_photo_camera">Use my camera</string>
+    <string name="select_photo_remove">Delete picture</string>
+
+    <!-- Errors -->
+    <string name="error_generic">WTF! There was a problem</string>
+    <string name="error_connection">Mmm... Do you have connection?</string>
+    <string name="error_server_connection">Ussh... Something fails</string>
+    <string name="error_server_unknown">Something is failing</string>
+    <string name="error_unknown">Ops! We have a problem </string>
+    <string name="error_gps_disabled">Is your GPS activate? Tap here</string>
+    <string name="error_gps_permission">Please: We need your gps permission</string>
+    <string name="error_storage_permission">Please: We need your audio and camera permission</string>
+    <string name="error_storage_promo_code_permission">Please: We need your sharing permissions</string>
+    <string name="error_storage_invite_my_friends_permission">Please: We need your invitation permission</string>
+    <string name="error_record_audio_permission">Please: We need your microphone permission</string>
+    <string name="error_speed">You are too fast!</string>
+    <string name="error_location">Your position is not good</string>
+    <string name="error_location_mock">Hacking GPS? Don\'t do it again</string>
+    <string name="error_upload_image_profile">Ops! Uploading error</string>
+    <string name="error_upload_audio_profile">Ouch! Your profile audio is not saved</string>
+    <string name="error_upload_notification_topic">Ouch! Saving problem. Try it again later</string>
+    <string name="error_capture_footprint">Ouch. There was a problem</string>
+    <string name="error_server_repeated_user_api">This name is already taken</string>
+    <string name="error_server_repeated_email_api">This email is already taken</string>
+    <string name="error_server_banned_user_api">You have been banned</string>
+    <string name="error_server_unauthorized_api">Username or password incorrect</string>
+    <string name="error_server_access_data_api">Your current password is incorrect</string>
+    <string name="error_server_user_not_exist_api">Your user or password incorrect</string>
+    <string name="error_server_upload_file_api">Uploading error</string>
+    <string name="error_login_facebook">¡Ouch! FB connection error</string>
+    <string name="error_login_google">¡Ops! Google connection error</string>
+    <string name="error_load_territory">Territory uploading error</string>
+    <string name="error_crop_image">Crop image error</string>
+    <string name="error_create_comment">Uploading comment error</string>
+    <string name="error_delete_footprint">We have a problem deleting your picture. Try it again.</string>
+    <string name="error_delete_footprint_collection">We have a problem deleting your picture. Try it again.</string>
+    <string name="error_load_image_welcome_screen">We found a problem showing up the picture. Check your connection</string>
+    <string name="error_update_password">There was a problem updating your password</string>
+    <string name="error_update_profile">There was a problem updating your profile</string>
+    <string name="error_promo_code">There was a problem updating your invitation</string>
+    <string name="error_server_promo_code_invalid_api">This promocode is wrong</string>
+    <string name="error_server_promo_code_incorrect_api">This promocode doesn\'t work</string>
+    <string name="error_server_promo_code_already_exchanged_api">¡Ehh! This code have been used</string>
+    <string name="error_server_promo_code_expired_api">¡Ops! This code is expired</string>
+    <string name="error_server_username_pattern_api">Don\'t use rare characters in your username</string>
+    <string name="error_desactivate_user">There was a problem deactivating your account</string>
+    <string name="error_activate_user">There was a problem activating your account</string>
+
+    <!-- Local Errors -->
+    <string name="error_local_empty_username">We need your username</string>
+    <string name="error_local_empty_birthdate">Wait! We need your birthdate</string>
+    <string name="error_local_empty_birthdate_pattern">Wait! We need your birthdate</string>
+    <string name="error_local_empty_birthdate_under_fourteen">Wait! You have to be older than 13</string>
+    <string name="error_local_empty_birthdate_maximum_age">We don accept inmortals.Check your birthdate</string>
+    <string name="error_local_empty_birthdate_age_future">Do you come from future? Check your birthdate</string>
+    <string name="error_local_empty_under_fourteen">You must be older than 13</string>
+    <string name="error_local_empty_password">We need your password</string>
+    <string name="error_local_empty_image">Wait! We need your photo</string>
+    <string name="error_local_empty_title">Wait! We need your title</string>
+    <string name="error_local_empty_description">No description?</string>
+    <string name="error_local_unclassified_emoji_category">Please, consider use a title</string>
+    <string name="error_local_empty_comment">There is no comment</string>
+    <string name="error_local_play_audio">Ops! We have audio problems</string>
+    <string name="error_local_create_footprint_admin">No way</string>
+    <string name="error_local_create_comment_admin">No way</string>
+    <string name="error_local_vote_footprint_admin">No way</string>
+    <string name="error_local_all_equals_passwords">¡Ops! passwords are the same</string>
+    <string name="error_local_new_different_passwords">¡Uch! new passwords are diferents</string>
+    <string name="error_local_fill_all_passwords">Fill the passwords</string>
+    <string name="error_local_minimum_range_mined">You need more than 2 meters</string>
+    <string name="error_local_maximum_range_mined_per_day">¡¡Ehh!! Has alcanzado tu límite diario de 200m., pero puedes acumularlos.</string>
+    <string name="error_local_terms_conditions">Accept terms and conditions before continue</string>
+    <string name="error_local_email">Something is wrong in your email</string>
+    <string name="error_local_empty_email">Wait... We need your email</string>
+    <string name="error_local_username_pattern">Don\'t use rare characters in your username</string>
+    <string name="error_local_empty_promo_code">Hey! We need your invitation code</string>
+
+    <!-- Mock -->
+    <string name="mock_login_user_password">Enter any username and password</string>
+    <string name="mock_login">This is a mock, we don\'t use any real data. Click on \"Log in\"</string>
+    <string name="news_raddar_top_mock">Hello!</string>
+    <string name="news_raddar_diagonal_mock">MOCK</string>
+    <string name="news_raddar_title_mock">Raddar Mock Beta v%s</string>
+    <string name="news_raddar_description_mock">
+        This app was the product of a Startup from Seville (Spain) called Kreomi that did not work in the market. We started in 2016 and finished in 2018 \n\n
+        ✔ This project is deprecated \n\n
+        ✔ We do not save any data, all data are mocks \n\n
+        ✔ Mock images from https://pixabay.com \n\n
+        ✔ Mock comments\n\n
+        ✔ All our servers are down \n\n
+        ✔ Fabric and Firebase are active for usage statistics\n\n
+        ✔ You can see the source code and more information on GitHub\n\n
+        ✔ If you have any question do not hesitate to contact us at raddarapp@gmail.com \n\n
+        ❤ THANK YOU TO EVERYONE WHO COLLABORATED WITH US ❤\n
+    </string>
+    <string name="mock_disable">Not available. You can contact us at raddarapp@gmail.com</string>
+    <string name="mock_email">raddarapp@gmail.com</string>
+    <string name="url_terms_conditions_mock">https://github.com/jaimegc/raddarapp/blob/master/privacy_policy.md</string>
+    <string name="url_privacity_policy_mock">https://github.com/jaimegc/raddarapp/blob/master/privacy_policy.md</string>
+</resources>

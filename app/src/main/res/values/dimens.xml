@@ -1,0 +1,109 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="loading_size">60dp</dimen>
+    <dimen name="loading_medium_size">45dp</dimen>
+    <dimen name="loading_mini_size">30dp</dimen>
+    <dimen name="loading_mini2_size">36dp</dimen>
+    <dimen name="loading_circle_width">5dp</dimen>
+
+    <!-- Texts -->
+    <dimen name="textsize_mini_1">6sp</dimen>
+    <dimen name="textsize_mini_2">7sp</dimen>
+    <dimen name="textsize_mini_3">8sp</dimen>
+    <dimen name="textsize_very_small1">9sp</dimen>
+    <dimen name="textsize_very_small2">10sp</dimen>
+    <dimen name="textsize_small1">11sp</dimen>
+    <dimen name="textsize_small2">12sp</dimen>
+    <dimen name="textsize_medium">13sp</dimen>
+    <dimen name="textsize_medium2">14sp</dimen>
+    <dimen name="textsize_medium3">15sp</dimen>
+    <dimen name="textsize_big1">16sp</dimen>
+    <dimen name="textsize_big1_px">16px</dimen>
+    <dimen name="textsize_big2">17sp</dimen>
+    <dimen name="textsize_very_big1">18sp</dimen>
+    <dimen name="textsize_very_big2">19sp</dimen>
+    <dimen name="textsize_very_big3">20sp</dimen>
+    <dimen name="textsize_huge1">21sp</dimen>
+    <dimen name="textsize_huge2">22sp</dimen>
+    <dimen name="textsize_huge3">24sp</dimen>
+    <dimen name="textsize_huge4">25sp</dimen>
+    <dimen name="textsize_huge4_px">25px</dimen>
+    <dimen name="textsize_very_huge">26sp</dimen>
+    <dimen name="textsize_enormous1">36sp</dimen>
+    <dimen name="textsize_enormous2">46sp</dimen>
+    <dimen name="textsize_enormous3">56sp</dimen>
+
+    <dimen name="textsize_power_number">60sp</dimen>
+
+    <dimen name="main_app_bar_height">250dp</dimen>
+    <dimen name="main_overlap_top">40dp</dimen>
+    <dimen name="main_double_cardview_container_height">140dp</dimen>
+    <dimen name="default_layout_margin_halved">9.5dp</dimen>
+    <dimen name="default_layout_margin_halved_medium">2.5dp</dimen>
+    <dimen name="default_layout_margin">16dp</dimen>
+    <dimen name="default_layout_margin_quartered">4dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_very_small1">2dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_very_small2">3dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_small">4dp</dimen>
+    <dimen name="default_layout_margin_footprint_card">6dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_medium">8dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_big">10dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_big2">12dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_big3">14dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_text">5dp</dimen>
+    <dimen name="default_layout_margin_footprint_card_description">5dp</dimen>
+    <dimen name="default_layout_margin_top_show_territory_info">6dp</dimen>
+    <dimen name="default_layout_margin_top_image_profile">8dp</dimen>
+    <dimen name="default_layout_margin_leaders">8dp</dimen>
+    <dimen name="default_layout_margin_leaders_separation">8dp</dimen>
+
+    <dimen name="main_cardview_trip_height">142dp</dimen>
+    <dimen name="recycler_item_place">120dp</dimen>
+    <dimen name="map_margin_bottom">200dp</dimen>
+    <dimen name="item_recycler_number_dimen">24dp</dimen>
+    <dimen name="default_layout_margin_three_fourths">12dp</dimen>
+    <dimen name="item_place_details_height">380dp</dimen>
+
+    <!-- User Ranking -->
+    <dimen name="size_user_ranking_decor_1dp">57dp</dimen>
+    <dimen name="size_leader_ranking_decor_1dp">97dp</dimen>
+    <dimen name="size_user_ranking">72dp</dimen>
+    <dimen name="size_leader_ranking">100dp</dimen>
+    <dimen name="size_leader_king_ranking">176dp</dimen>
+    <dimen name="size_user_ranking_image">50dp</dimen>
+    <dimen name="size_leader_ranking_image">54dp</dimen>
+    <dimen name="size_leader_ranking_king_image">72dp</dimen>
+    <dimen name="size_leader_ranking_king_border">176dp</dimen>
+    <dimen name="size_leader_ranking_crown">60dp</dimen>
+    <dimen name="size_leader_ranking_icon">32dp</dimen>
+    <dimen name="size_leader_territory_ranking_icon">22dp</dimen>
+
+    <!-- Dimens Profile -->
+    <dimen name="image_width">160dp</dimen>
+    <dimen name="image_final_width">32dp</dimen>
+    <dimen name="spacing_normal">16dp</dimen>
+
+    <!-- Login -->
+    <dimen name="login_image">120dp</dimen>
+
+    <dimen name="default_collapsed_padding">12dp</dimen>
+    <dimen name="default_expanded_padding">16dp</dimen>
+    <dimen name="default_collapsed_image_size">40dp</dimen>
+    <dimen name="default_expanded_image_size">160dp</dimen>
+    <dimen name="collapsed_text_username">18sp</dimen>
+    <dimen name="expanded_text_username">29sp</dimen>
+
+    <dimen name="collapsed_text_raddar">12sp</dimen>
+    <dimen name="expanded_text_raddar">20sp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="size_back_toolbar">45dp</dimen>
+    <dimen name="padding_back_toolbar">12dp</dimen>
+    <dimen name="size_user_image_profile">50dp</dimen>
+    <dimen name="size_user_image_profile_after">54dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="toolbar_leaders_height">70dp</dimen>
+</resources>

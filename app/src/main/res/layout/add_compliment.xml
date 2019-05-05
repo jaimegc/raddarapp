@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="160dp"
+    android:layout_height="160dp"
+    android:orientation="vertical"
+    android:layout_gravity="center">
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:src="@drawable/compliment" />
+
+    <TextView
+        android:id="@+id/love_phrase"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:textColor="@color/white"
+        android:paddingBottom="9dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="@dimen/textsize_big1"
+        android:text="@string/compliment_phrase1"/>
+
+</FrameLayout>

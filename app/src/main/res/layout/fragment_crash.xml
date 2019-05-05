@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_screen_alpha">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/confetti"
+        android:scaleType="centerCrop" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:background="@color/background_screen_confetti"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:src="@drawable/crash_face"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center_horizontal|top">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/marker_me"
+                android:textSize="@dimen/textsize_enormous3"
+                android:text="@string/crash_message_top"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/marker_me"
+                android:textSize="@dimen/textsize_huge2"
+                android:text="@string/crash_message_middle"
+                android:layout_marginBottom="30dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_very_big1"
+                android:text="@string/crash_message_bottom"
+                android:layout_marginBottom="20dp" />
+
+            <Button
+                android:id="@+id/restart_app"
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:background="@drawable/background_button_restart_app"
+                android:foreground="?attr/selectableItemBackground"
+                android:textColor="@color/blue_dark_raddar"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textAllCaps="false"
+                android:textSize="@dimen/textsize_very_big3"
+                android:text="@string/crash_button_restart"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

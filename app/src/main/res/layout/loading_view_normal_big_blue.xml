@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear_view_normal_blue"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:orientation="horizontal">
+
+  <TextView
+      android:id="@+id/text_loading"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:textColor="@color/blue_dark_raddar"
+      android:gravity="center"
+      android:textSize="@dimen/textsize_very_huge"
+      android:fitsSystemWindows="true"
+      android:layout_marginEnd="10dp"
+      android:text="@string/loading"/>
+
+  <com.wang.avi.AVLoadingIndicatorView
+      android:layout_width="@dimen/loading_medium_size"
+      android:layout_height="@dimen/loading_medium_size"
+      android:layout_gravity="center"
+      app:indicatorName="BallScaleMultipleIndicator"
+      app:indicatorColor="@color/blue_dark_raddar" />
+</LinearLayout>

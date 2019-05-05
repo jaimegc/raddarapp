@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_vote"
+        android:icon="@drawable/ic_vote_hearts"
+        android:title="@string/navigation_my_raddar" />
+
+    <item
+        android:id="@+id/navigation_influencers"
+        android:icon="@drawable/ic_influencers"
+        android:title="@string/navigation_leaders" />
+
+    <item
+        android:id="@+id/navigation_create_footprint"
+        android:title="" />
+
+    <item
+        android:id="@+id/navigation_my_friends"
+        android:icon="@drawable/ic_friends"
+        android:title="@string/navigation_my_friends" />
+
+    <item
+        android:id="@+id/navigation_my_profile"
+        android:icon="@drawable/ic_my_profile"
+        android:title="@string/navigation_my_profile" />
+
+</menu>
