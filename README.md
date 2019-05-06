@@ -101,6 +101,19 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
   <img src="./art/create_footprint4.jpg" width="286">
 </p>
 
+### Territories
+
+<p align="center">
+  <img src="./art/map1.jpg" width="286">
+  <img src="./art/map2.jpg" width="286">
+  <img src="./art/map3.jpg" width="286">
+</p>
+
+<p align="left">
+  <img src="./art/map4.jpg" width="286">
+</p>
+
+
 ### Profiles
 
 <p align="center">
@@ -132,6 +145,33 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 
 <p align="left">
   <img src="./art/zoom.jpg" width="286">
+</p>
+
+### Tutorial
+
+<p align="center">
+  <img src="./art/tutorial1.jpg" width="286">
+  <img src="./art/tutorial2.jpg" width="286">
+  <img src="./art/tutorial3.jpg" width="286">
+</p>
+
+<p align="center">
+  <img src="./art/tutorial4.jpg" width="286">
+  <img src="./art/tutorial5.jpg" width="286">
+  <img src="./art/tutorial6.jpg" width="286">
+</p>
+
+<p align="left">
+  <img src="./art/tutorial7.jpg" width="286">
+  <img src="./art/tutorial8.jpg" width="286">
+</p>
+
+### Others
+
+<p align="center">
+  <img src="./art/others1.jpg" width="286">
+  <img src="./art/others2.jpg" width="286">
+  <img src="./art/others3.jpg" width="286">
 </p>
 
 ## Libraries used in this project
