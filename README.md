@@ -48,7 +48,91 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 
 ## Screens
 
+### Splash & Welcome
 
+<p align="center">
+  <img src="./art/splash.jpg" width="286">
+  <img src="./art/welcome1.jpg" width="286">
+  <img src="./art/welcome2.jpg" width="286">
+</p>
+
+<p align="center">
+  <img src="./art/welcome3.jpg" width="286">
+  <img src="./art/welcome4.jpg" width="286">
+  <img src="./art/welcome5.jpg" width="286">
+</p>
+
+### Login
+
+<p align="center">
+  <img src="./art/login1.jpg" width="286">
+  <img src="./art/login2.jpg" width="286">
+  <img src="./art/login3.jpg" width="286">
+</p>
+
+<p align="left">
+  <img src="./art/login4.jpg" width="286">
+  <img src="./art/login5.jpg" width="286">
+</p>
+
+### Footprints & Rankings
+
+<p align="center">
+  <img src="./art/footprints1.jpg" width="286">
+  <img src="./art/footprints2.jpg" width="286">
+  <img src="./art/comments.jpg" width="286">
+</p>
+
+<p align="center">
+  <img src="./art/ranking_footprints.jpg" width="286">
+  <img src="./art/ranking_people1.jpg" width="286">
+  <img src="./art/ranking_people2.jpg" width="286">
+</p>
+
+### Create Footprint
+
+<p align="center">
+  <img src="./art/create_footprint1.jpg" width="286">
+  <img src="./art/create_footprint2.jpg" width="286">
+  <img src="./art/create_footprint3.jpg" width="286">
+</p>
+
+<p align="left">
+  <img src="./art/create_footprint4.jpg" width="286">
+</p>
+
+### Profiles
+
+<p align="center">
+  <img src="./art/profile1.jpg" width="286">
+  <img src="./art/profile2.jpg" width="286">
+  <img src="./art/profile3.jpg" width="286">
+</p>
+
+### Profile Settings
+
+<p align="center">
+  <img src="./art/settings1.jpg" width="286">
+  <img src="./art/settings2.jpg" width="286">
+  <img src="./art/settings3.jpg" width="286">
+</p>
+
+<p align="left">
+  <img src="./art/audio_record.jpg" width="286">
+  <img src="./art/audio_recording.jpg" width="286">
+</p>
+
+### Crop & Rotate & Zoom Images
+
+<p align="center">
+  <img src="./art/crop1.jpg" width="286">
+  <img src="./art/crop2.jpg" width="286">
+  <img src="./art/rotate.jpg" width="286">
+</p>
+
+<p align="left">
+  <img src="./art/zoom.jpg" width="286">
+</p>
 
 ## Libraries used in this project
 
@@ -82,6 +166,22 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
     * Maps
     * Maps Utils
     * Location
+    
+License
+-------
+
+    Copyright 2018 Fernando Franco Giráldez
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.    
 
 [1]: https://github.com/Karumi/Rosie
 [2]: https://github.com/pedrovgs/Renderers
@@ -110,5 +210,3 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 [25]: https://firebase.google.com/docs/android/setup
 [26]: https://developers.facebook.com/docs/android/componentsdks
 [27]: https://developers.google.com/maps/documentation/android-sdk/start
-
-
