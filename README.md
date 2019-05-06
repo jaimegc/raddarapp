@@ -51,127 +51,127 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 ### Splash & Welcome
 
 <p align="center">
-  <img src="./art/splash.jpg" width="286">
-  <img src="./art/welcome1.jpg" width="286">
-  <img src="./art/welcome2.jpg" width="286">
+  <img src="./art/splash.jpg" width="280">
+  <img src="./art/welcome1.jpg" width="280">
+  <img src="./art/welcome2.jpg" width="280">
 </p>
 
 <p align="center">
-  <img src="./art/welcome3.jpg" width="286">
-  <img src="./art/welcome4.jpg" width="286">
-  <img src="./art/welcome5.jpg" width="286">
+  <img src="./art/welcome3.jpg" width="280">
+  <img src="./art/welcome4.jpg" width="280">
+  <img src="./art/welcome5.jpg" width="280">
 </p>
 
 ### Login
 
 <p align="center">
-  <img src="./art/login1.jpg" width="286">
-  <img src="./art/login2.jpg" width="286">
-  <img src="./art/login3.jpg" width="286">
+  <img src="./art/login1.jpg" width="280">
+  <img src="./art/login2.jpg" width="280">
+  <img src="./art/login3.jpg" width="280">
 </p>
 
 <p align="left">
-  <img src="./art/login4.jpg" width="286">
-  <img src="./art/login5.jpg" width="286">
+  <img src="./art/login4.jpg" width="280">
+  <img src="./art/login5.jpg" width="280">
 </p>
 
 ### Footprints & Rankings
 
 <p align="center">
-  <img src="./art/footprints1.jpg" width="286">
-  <img src="./art/footprints2.jpg" width="286">
-  <img src="./art/comments.jpg" width="286">
+  <img src="./art/footprints1.jpg" width="280">
+  <img src="./art/footprints2.jpg" width="280">
+  <img src="./art/comments.jpg" width="280">
 </p>
 
 <p align="center">
-  <img src="./art/ranking_footprints.jpg" width="286">
-  <img src="./art/ranking_people1.jpg" width="286">
-  <img src="./art/ranking_people2.jpg" width="286">
+  <img src="./art/ranking_footprints.jpg" width="280">
+  <img src="./art/ranking_people1.jpg" width="280">
+  <img src="./art/ranking_people2.jpg" width="280">
 </p>
 
 ### Create Footprint
 
 <p align="center">
-  <img src="./art/create_footprint1.jpg" width="286">
-  <img src="./art/create_footprint2.jpg" width="286">
-  <img src="./art/create_footprint3.jpg" width="286">
+  <img src="./art/create_footprint1.jpg" width="280">
+  <img src="./art/create_footprint2.jpg" width="280">
+  <img src="./art/create_footprint3.jpg" width="280">
 </p>
 
 <p align="left">
-  <img src="./art/create_footprint4.jpg" width="286">
+  <img src="./art/create_footprint4.jpg" width="280">
 </p>
 
 ### Territories
 
 <p align="center">
-  <img src="./art/map1.jpg" width="286">
-  <img src="./art/map2.jpg" width="286">
-  <img src="./art/map3.jpg" width="286">
+  <img src="./art/map1.jpg" width="280">
+  <img src="./art/map2.jpg" width="280">
+  <img src="./art/map3.jpg" width="280">
 </p>
 
 <p align="left">
-  <img src="./art/map4.jpg" width="286">
+  <img src="./art/map4.jpg" width="280">
 </p>
 
 
 ### Profiles
 
 <p align="center">
-  <img src="./art/profile1.jpg" width="286">
-  <img src="./art/profile2.jpg" width="286">
-  <img src="./art/profile3.jpg" width="286">
+  <img src="./art/profile1.jpg" width="280">
+  <img src="./art/profile2.jpg" width="280">
+  <img src="./art/profile3.jpg" width="280">
 </p>
 
 ### Profile Settings
 
 <p align="center">
-  <img src="./art/settings1.jpg" width="286">
-  <img src="./art/settings2.jpg" width="286">
-  <img src="./art/settings3.jpg" width="286">
+  <img src="./art/settings1.jpg" width="280">
+  <img src="./art/settings2.jpg" width="280">
+  <img src="./art/settings3.jpg" width="280">
 </p>
 
 <p align="left">
-  <img src="./art/audio_record.jpg" width="286">
-  <img src="./art/audio_recording.jpg" width="286">
+  <img src="./art/audio_record.jpg" width="280">
+  <img src="./art/audio_recording.jpg" width="280">
 </p>
 
 ### Crop & Rotate & Zoom Images
 
 <p align="center">
-  <img src="./art/crop1.jpg" width="286">
-  <img src="./art/crop2.jpg" width="286">
-  <img src="./art/rotate.jpg" width="286">
+  <img src="./art/crop1.jpg" width="280">
+  <img src="./art/crop2.jpg" width="280">
+  <img src="./art/rotate.jpg" width="280">
 </p>
 
 <p align="left">
-  <img src="./art/zoom.jpg" width="286">
+  <img src="./art/zoom.jpg" width="280">
 </p>
 
 ### Tutorial
 
 <p align="center">
-  <img src="./art/tutorial1.jpg" width="286">
-  <img src="./art/tutorial2.jpg" width="286">
-  <img src="./art/tutorial3.jpg" width="286">
+  <img src="./art/tutorial1.jpg" width="280">
+  <img src="./art/tutorial2.jpg" width="280">
+  <img src="./art/tutorial3.jpg" width="280">
 </p>
 
 <p align="center">
-  <img src="./art/tutorial4.jpg" width="286">
-  <img src="./art/tutorial5.jpg" width="286">
-  <img src="./art/tutorial6.jpg" width="286">
+  <img src="./art/tutorial4.jpg" width="280">
+  <img src="./art/tutorial5.jpg" width="280">
+  <img src="./art/tutorial6.jpg" width="280">
 </p>
 
 <p align="left">
-  <img src="./art/tutorial7.jpg" width="286">
-  <img src="./art/tutorial8.jpg" width="286">
+  <img src="./art/tutorial7.jpg" width="280">
+  <img src="./art/tutorial8.jpg" width="280">
 </p>
 
 ### Others
 
 <p align="center">
-  <img src="./art/others1.jpg" width="286">
-  <img src="./art/others2.jpg" width="286">
-  <img src="./art/others3.jpg" width="286">
+  <img src="./art/others1.jpg" width="280">
+  <img src="./art/others2.jpg" width="280">
+  <img src="./art/others3.jpg" width="280">
 </p>
 
 ## Libraries used in this project
