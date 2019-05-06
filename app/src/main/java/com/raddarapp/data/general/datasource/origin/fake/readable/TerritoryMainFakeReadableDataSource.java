@@ -48,10 +48,8 @@ public class TerritoryMainFakeReadableDataSource extends EmptyPaginatedReadableD
 
         if (zoneKey.equals(MONTEQUINTO)) {
             territoryMain = generateTerritoryMainMontequinto();
-        } else if (zoneKey.equals(DOS_HERMANAS)){
+        } else if (zoneKey.equals(DOS_HERMANAS)) {
             territoryMain = generateTerritoryMainDosHermanas();
-        } else if (zoneKey.equals(ALFALFA)){
-            territoryMain = generateTerritoryMainAlfalfa();
         } else {
             territoryMain = generateTerritoryMainWorld();
         }
@@ -776,8 +774,8 @@ public class TerritoryMainFakeReadableDataSource extends EmptyPaginatedReadableD
                 .withParentKey(DOS_HERMANAS)
                 .withName(MONTEQUINTO)
                 .withParentName(DOS_HERMANAS)
-                .withArea(148500)
-                .withTotalFootprints(18900)
+                .withArea(9500)
+                .withTotalFootprints(1200)
                 .withCountryEmoji("ES")
                 .withHasSons(false)
                 .withLeader(user)
@@ -794,8 +792,8 @@ public class TerritoryMainFakeReadableDataSource extends EmptyPaginatedReadableD
                 .withParentKey(ALFALFA)
                 .withName(DOS_HERMANAS)
                 .withParentName(ALFALFA)
-                .withArea(8500)
-                .withTotalFootprints(300)
+                .withArea(28300)
+                .withTotalFootprints(8300)
                 .withCountryEmoji("ES")
                 .withHasSons(true)
                 .withLeader(user)
@@ -830,8 +828,8 @@ public class TerritoryMainFakeReadableDataSource extends EmptyPaginatedReadableD
                 .withParentKey("")
                 .withName(WORLD)
                 .withParentName("")
-                .withArea(8500)
-                .withTotalFootprints(300)
+                .withArea(93700)
+                .withTotalFootprints(23600)
                 .withCountryEmoji(EMOJI_WORLD)
                 .withHasSons(true)
                 .withLeader(user)
