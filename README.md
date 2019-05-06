@@ -43,7 +43,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 * Tests are incompleted. There are some deprecated instrumentation tests with MockWebServer
 * The idea of the empty interfaces, packages organization, all the Activities with a Fragment and so on, was to homogenize the development for the backend developers. So, they could add new features easily
 * We ❤️ Kotlin but in this old project we used Java 😭
-* We ❤️ testing but for this product made in our free time after work... Sorry! 🙏 Moreover, you will see later a lot of changes in previous versions of Raddar, so create a new test each week it did not make sense 😅
+* We ❤️ testing but for this product made in our free time after work... Sorry! 🙏 Moreover, you will see later a lot of changes in previous versions of Raddar, so create new tests each week it did not make sense 😅
 * We ❤️ Clean Code & Clean Architecture but it is not always possible. Be pragmatic! ✌️
 
 ## Screens
