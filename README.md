@@ -1,5 +1,5 @@
 # Raddar
-Raddar is the first social app where your posts could die. Your post could die or can be leaders of the world ranking. Swipe up or swipe down every post you find in your Raddar. Your votes and the votes of the entire community will decide if the posts survive or die forever.
+Raddar is the first social app where your publications could die. Your publication could die or can be leaders of the world ranking. Swipe up or swipe down every publication you find in your Raddar. Your votes and the votes of the entire community will decide if the publications survive or die forever.
 
 This app was the product of a Startup from Seville (Spain) called Kreomi that did not work in the market. We made this application in our free time after work. We started in 2016 and finished in 2018.
 
