@@ -32,37 +32,6 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
   * Profile settings
   * Record and reproduce audio
   * Animations and sounds
-* Dependencies
-  * [Rosie][1]
-  * [Renderers][2]
-  * [Okhttp][3]
-  * [Retrofit][4]
-  * [Picasso][5]
-  * [Dagger][6]
-  * [Butterknife][7]
-  * [RoundedImageView][8]
-  * [TransitionImageView][9]
-  * [MockWebServer][10]
-  * [ApacheCommonsIO][11]
-  * [Calligrahy][12]
-  * [Opus][13]
-  * [RxAudio][14]
-  * [TapTargetView][15]
-  * [PhotoView][16]
-  * [PageIndicatorView][17]
-  * [StickySwitch][18]
-  * [Pulsator4droid][19]
-  * [CustomActivityOnCrash][20]
-  * [CircularImageView][21]
-  * [FloatingView][22]
-  * [Emoji][23]
-  * [Fabric][24]
-  * [Firebase][25]
-  * [Facebook SDK][26]
-  * [Google Play Services][27]
-    * Maps
-    * Maps Utils
-    * Location
 
 ## Others
 
@@ -75,6 +44,42 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 * We ❤️ testing but for this product made in our free time after work... Sorry! 🙏 Moreover, you will see later a lot of changes in previous versions of Raddar, so create a new test each week it did not make sense 😅
 * We ❤️ Clean Code & Clean Architecture but it is not always possible. Be pragmatic! ✌️
 
+## Screens
+
+
+
+## Libraries used in this project
+
+* [Rosie][1]
+* [Renderers][2]
+* [Okhttp][3]
+* [Retrofit][4]
+* [Picasso][5]
+* [Dagger][6]
+* [Butterknife][7]
+* [RoundedImageView][8]
+* [TransitionImageView][9]
+* [MockWebServer][10]
+* [ApacheCommonsIO][11]
+* [Calligrahy][12]
+* [Opus][13]
+* [RxAudio][14]
+* [TapTargetView][15]
+* [PhotoView][16]
+* [PageIndicatorView][17]
+* [StickySwitch][18]
+* [Pulsator4droid][19]
+* [CustomActivityOnCrash][20]
+* [CircularImageView][21]
+* [FloatingView][22]
+* [Emoji][23]
+* [Fabric][24]
+* [Firebase][25]
+* [Facebook SDK][26]
+* [Google Play Services][27]
+    * Maps
+    * Maps Utils
+    * Location
 
 [1]: https://github.com/Karumi/Rosie
 [2]: https://github.com/pedrovgs/Renderers
