@@ -27,6 +27,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
   * Vote publication with swipe up/down
   * Crop, rotate and zoom images
   * Create comments
+  * Save favourite publications
   * Fabric and Firebase for usage statistics
   * Push notifications with Firebase
   * Profile settings
@@ -38,6 +39,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 * <b><u>VERY IMPORTANT</u>: To launch this project, use the "debugFake" Build Variant</b>
 * This project is a <b>Beta</b>, some features are not implemented. For example, edit a publication, follow users, delete comments, report a publication and so on
 * This project is <b>deprecated</b>, we started in 2016 and we have not tested devices with Android >= 8.0
+* All the keys and the google-services.json are fake except google map api key for debugs build variants
 * Tests are incompleted. There are some deprecated instrumentation tests with MockWebServer
 * The idea of the empty interfaces, packages organization, all the Activities with a Fragment and so on, was to homogenize the development for the backend developers. So, they could add new features easily
 * We ❤️ Kotlin but in this old project we used Java 😭
