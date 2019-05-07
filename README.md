@@ -1,5 +1,5 @@
 # Raddar
-Raddar is the first social app where your publications could die. Your publication could die or can be leaders of the world ranking. Swipe up or swipe down every publication you find in your Raddar. Your votes and the votes of the entire community will decide if the publications survive or die forever.
+Raddar is the first social app where your posts could die. Your post could die or can be leaders of the world ranking. Swipe up or swipe down every post you find in your Raddar. Your votes and the votes of the entire community will decide if the posts survive or die.
 
 This app was the product of a Startup from Seville (Spain) called Kreomi that did not work in the market. We made this application in our free time after work. We started in 2016 and finished in 2018.
 
@@ -23,14 +23,14 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
   * My own Clean Architecture with MVP using [Rosie][1] framework
   * Separate Android Framework and Java in <b>android</b> and <b>general</b> packages respectively to promote the backend developers can add new features
 * Features
-  * Login with Google, Facebook and user & pass
+  * Login with Google, Facebook and user/pass
   * Splash, Welcome and Tutorial screens
   * Maps, manage geolocation, draw areas and detect fake location
-  * Create and delete a geolocated publication
-  * Vote publication with swipe up/down
+  * Create and delete a geolocated post
+  * Vote for a post with swipe up/down
   * Crop, rotate and zoom images
   * Create comments
-  * Save favourite publications
+  * Save your favourite posts
   * Fabric and Firebase for usage statistics
   * Push notifications with Firebase
   * Profile settings
@@ -40,13 +40,13 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 ## Others
 
 * <b><u>VERY IMPORTANT</u>: To launch this project, use the "debugFake" Build Variant</b>
-* This project is a <b>Beta</b>, some features are not implemented. For example, edit a publication, follow users, delete comments, report a publication and so on
-* This project is <b>deprecated</b>, we started in 2016 and we have not tested devices with Android >= 8.0
-* All the keys and the google-services.json are fake except google map api key for debugs build variants
-* Tests are incompleted. There are some deprecated instrumentation tests with MockWebServer
-* The idea of the empty interfaces, packages organization, all the Activities with a Fragment and so on, was to homogenize the development for the backend developers. So, they could add new features easily
+* This project is a <b>Beta</b>, some features are not implemented. For example, to edit a post, follow users, delete comments, report a post and so on
+* This project is <b>deprecated</b>, we started in 2016 and we have not tested on devices with Android >= 8.0
+* All the keys and the google-services.json are fake except google maps api key for debugs build variants
+* Tests are incomplete. There are some deprecated instrumentation tests with MockWebServer
+* The idea of the empty interfaces, organization of packages, all the Activities with a Fragment and so on, was to homogenize the development for the backend developers. So, they could add new features easily
 * We ❤️ Kotlin but in this old project we used Java 😭
-* We ❤️ testing but for this product made in our free time after work... Sorry! 🙏 Moreover, you can see the making of and the previous versions <a href="https://github.com/jaimegc/raddarapp/blob/master/BehindTheScenes.md">here</a>. So create new tests each week it did not make sense 😅
+* We ❤️ testing but this product was made in our free time after work... Sorry! 🙏 Moreover, you can see the making of and the previous versions <a href="https://github.com/jaimegc/raddarapp/blob/master/BehindTheScenes.md">here</a>. So creating new tests each week did not make sense 😅
 * We ❤️ Clean Code & Clean Architecture but it is not always possible. Be pragmatic! ✌️
 
 ## Screens
@@ -78,7 +78,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
   <img src="./art/login5.jpg" width="280">
 </p>
 
-### Footprints & Rankings
+### Posts & Rankings
 
 <p align="center">
   <img src="./art/footprints1.jpg" width="280">
@@ -92,7 +92,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
   <img src="./art/ranking_people2.jpg" width="280">
 </p>
 
-### Create Footprint
+### Create Post
 
 <p align="center">
   <img src="./art/create_footprint1.jpg" width="280">
