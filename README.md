@@ -43,7 +43,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 * Tests are incompleted. There are some deprecated instrumentation tests with MockWebServer
 * The idea of the empty interfaces, packages organization, all the Activities with a Fragment and so on, was to homogenize the development for the backend developers. So, they could add new features easily
 * We ❤️ Kotlin but in this old project we used Java 😭
-* We ❤️ testing but for this product made in our free time after work... Sorry! 🙏 Moreover, you can see the making of and previous versions <a href="https://github.com/jaimegc/raddarapp/blob/master/BehindTheScenes.md">here</a>. So create new tests each week it did not make sense 😅
+* We ❤️ testing but for this product made in our free time after work... Sorry! 🙏 Moreover, you can see the making of and the previous versions <a href="https://github.com/jaimegc/raddarapp/blob/master/BehindTheScenes.md">here</a>. So create new tests each week it did not make sense 😅
 * We ❤️ Clean Code & Clean Architecture but it is not always possible. Be pragmatic! ✌️
 
 ## Screens
@@ -176,7 +176,67 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 
 ### Behind the Scenes
 
-You can see the making of and previous versions <a href="https://github.com/jaimegc/raddarapp/blob/master/BehindTheScenes.md">here</a>
+You can see the making of and the previous versions <a href="https://github.com/jaimegc/raddarapp/blob/master/BehindTheScenes.md">here</a>
+
+## Raddar Team
+
+#### CEO & UX/UI Designer 
+
+<table>
+  <tr>
+    <th height="50">Dan Bellamy</th>
+    <th valign="center"><a href="https://mx.linkedin.com/in/danbellamy"><img src="./art/linkedin.png" height="30"/></a></th>  
+  </tr>
+</table>
+
+#### CTO & Android Engineer
+
+<table>
+  <tr>
+    <th height="50">Jaime GC</th>
+    <th valign="center"><a href="https://es.linkedin.com/in/jaimeguerrerocubero"><img src="./art/linkedin.png" height="30"/></a></th>  
+    <th valign="center"><a href="https://github.com/jaimegc"><img src="./art/github.png" height="30"/></a></th>  
+  </tr>
+</table>
+
+#### PM & Backend Engineer
+
+<table>
+  <tr>
+    <th height="50">Francisco Javier Delgado Vallano</th>
+    <th valign="center"><a href="https://es.linkedin.com/in/francisco-javier-delgado-vallano-b28b1670"><img src="./art/linkedin.png" height="30"/></a></th>  
+    <th valign="center"><a href="https://github.com/franvallano"><img src="./art/github.png" height="30"/></a></th>  
+  </tr>
+</table>
+
+#### Backend Engineer
+
+<table>
+  <tr>
+    <th height="50">Miguel Ángel Quintanilla</th>
+    <th valign="center"><a href="https://es.linkedin.com/in/miguel-ángel-quintanilla-758a5b120"><img src="./art/linkedin.png" height="30"/></a></th>  
+    <th valign="center"><a href="https://github.com/migangqui"><img src="./art/github.png" height="30"/></a></th>  
+  </tr>
+</table>
+
+##### Frontend Engineer
+
+<table>
+  <tr>
+    <th height="50">José Iván Moreno Soto</th>
+    <th valign="center"><a href="https://es.linkedin.com/in/jimoreno1"><img src="./art/linkedin.png" height="30"/></a></th>  
+    <th valign="center"><a href="https://github.com/Josmorsot"><img src="./art/github.png" height="30"/></a></th>  
+  </tr>
+</table>
+
+#### QA Engineer
+
+<table>
+  <tr>
+    <th height="50">Eusebio Gómez Moreno</th>
+    <th valign="center"><a href="https://es.linkedin.com/in/eugomor"><img src="./art/linkedin.png" height="30"/></a></th>  
+  </tr>
+</table>
 
 ## Libraries used in this project
 
