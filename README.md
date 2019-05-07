@@ -206,6 +206,7 @@ You can see the making of and the previous versions <a href="https://github.com/
     <th height="50">Francisco Javier Delgado Vallano</th>
     <th valign="center"><a href="https://es.linkedin.com/in/francisco-javier-delgado-vallano-b28b1670"><img src="./art/linkedin.png" height="30"/></a></th>  
     <th valign="center"><a href="https://github.com/franvallano"><img src="./art/github.png" height="30"/></a></th>  
+    <th valign="center"><a href="https://twitter.com/franvallano"><img src="./art/twitter.png" height="30"/></a></th>  
   </tr>
 </table>
 
@@ -216,6 +217,7 @@ You can see the making of and the previous versions <a href="https://github.com/
     <th height="50">Miguel Ángel Quintanilla</th>
     <th valign="center"><a href="https://es.linkedin.com/in/miguel-ángel-quintanilla-758a5b120"><img src="./art/linkedin.png" height="30"/></a></th>  
     <th valign="center"><a href="https://github.com/migangqui"><img src="./art/github.png" height="30"/></a></th>  
+    <th valign="center"><a href="https://twitter.com/maq_dev"><img src="./art/twitter.png" height="30"/></a></th>  
   </tr>
 </table>
 
