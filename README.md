@@ -14,6 +14,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
 
 ❤️ THANK YOU TO EVERYONE WHO COLLABORATED WITH US ❤️
 
+<br />
 <a href="https://play.google.com/store/apps/details?id=com.raddarapp"><img src="./art/google_play.png" width="150"/>
 
 ## Summary
