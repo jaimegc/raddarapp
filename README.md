@@ -219,7 +219,7 @@ You can see the making of and the previous versions <a href="https://github.com/
   </tr>
 </table>
 
-##### Frontend Engineer
+#### Frontend Engineer
 
 <table>
   <tr>
