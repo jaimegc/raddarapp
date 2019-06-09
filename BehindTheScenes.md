@@ -62,6 +62,6 @@ These images are sorted by date ascending.
   <img src="./art/bts30.jpg" width="280">
 </p>
 
-<p align="center">
+<p align="left">
   <img src="./art/bts31.jpg" width="560">
 </p>
