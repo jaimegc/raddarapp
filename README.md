@@ -34,7 +34,7 @@ This app was the product of a Startup from Seville (Spain) called Kreomi that di
   * Fabric and Firebase for usage statistics
   * Push notifications with Firebase
   * Profile settings
-  * Record and reproduce audio
+  * Record and play audio
   * Animations and sounds
 
 ## Others
